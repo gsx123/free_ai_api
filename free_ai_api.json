@@ -1,2 +1,865 @@
-{
-}
+[
+    {
+        "type": "XiaoMi",
+        "model": "mimo-v2-flash",
+        "endpoint": "https://api.xiaomimimo.com/v1/chat/completions",
+        "apiKey": "",
+        "enrollmentUrl": "https://platform.xiaomimimo.com/#/docs/quick-start/first-api-call",
+        "modelListUrl": "https://platform.xiaomimimo.com/#/docs/pricing",
+        "notes": "150,000 tokens per day, 20 RPM",
+        "needVPN": false,
+        "hasApiKey": true,
+        "hasEndpoint": true,
+        "modelOptions": [],
+        "modelPool": [
+            "mimo-v2-flash"
+        ]
+    },
+    {
+        "type": "NavyAI",
+        "model": "gpt-4.1-mini",
+        "endpoint": "https://api.navy/v1/chat/completions",
+        "apiKey": "",
+        "enrollmentUrl": "https://api.navy/docs/",
+        "modelListUrl": "https://api.navy/dashboard/#models",
+        "notes": "150,000 tokens per day, 20 RPM",
+        "needVPN": true,
+        "hasApiKey": true,
+        "hasEndpoint": true,
+        "modelOptions": [],
+        "modelPool": [
+            "gpt-5.2",
+            "gpt-4.1-mini",
+            "gemini-2.5-pro",
+            "gemini-2.5-flash",
+            "deepseek-v3.2",
+            "grok-4.1-fast-reasoning",
+            "kimi-k2-thinking",
+            "longcat-flash-chat",
+            "qwen3-235b-a22b-thinking-2507",
+            "minimax-m2",
+            "sonar-pro",
+            "pixtral-large-latest",
+            "mistral-saba-latest",
+            "codestral-latest",
+            "skyfall-36b-v2"
+        ]
+    },
+    {
+        "type": "ZenMux",
+        "model": "google/gemini-3-flash-preview-free",
+        "endpoint": "https://zenmux.ai/api/v1/chat/completions",
+        "apiKey": "",
+        "enrollmentUrl": "https://docs.zenmux.ai/guide/quickstart.html",
+        "modelListUrl": "https://zenmux.ai/models?sort=newest&keyword=free",
+        "notes": "Have cutting-edge gemini text/image models for free use , with a small number of free requests",
+        "needVPN": true,
+        "hasApiKey": true,
+        "hasEndpoint": true,
+        "modelOptions": [
+            {
+                "maxTokens": "16384",
+                "modalities": [
+                    "image"
+                ],
+                "model": "google/gemini-2.5-flash-image-free",
+                "enableTopP": true
+            },
+            {
+                "maxTokens": "65536",
+                "modalities": [
+                    "image"
+                ],
+                "model": "google/gemini-3-pro-image-preview-free",
+                "enableTopP": true
+            },
+            {
+                "maxTokens": "65536",
+                "modalities": [
+                    "text"
+                ],
+                "model": "google/gemini-3-pro-preview-free",
+                "quality": 3,
+                "enableTopP": true
+            }
+        ],
+        "modelPool": [
+            "stepfun/step-3.5-flash-free",
+            "z-ai/glm-4.7-flash-free",
+            "z-ai/glm-4.6v-flash",
+            "kuaishou/kat-coder-pro-v1",
+            "google/gemini-3-flash-preview-free",
+            "xiaomi/mimo-v2-flash-free"
+        ]
+    },
+    {
+        "type": "Chutes",
+        "model": "openai/gpt-oss-20b",
+        "endpoint": "https://llm.chutes.ai/v1/chat/completions",
+        "apiKey": "",
+        "enrollmentUrl": "https://chutes.ai/app/api",
+        "modelListUrl": "https://chutes.ai/app?type=llm&minPrice=0&maxPrice=0",
+        "notes": "Few open-source models available.",
+        "needVPN": true,
+        "hasApiKey": true,
+        "hasEndpoint": true,
+        "modelOptions": [],
+        "modelPool": [
+            "Alibaba-NLP/Tongyi-DeepResearch-30B-A3B",
+            "openai/gpt-oss-20b",
+            "meituan-longcat/LongCat-Flash-Chat-FP8",
+            "zai-org/GLM-4.5-Air",
+            "unsloth/gemma-3-4b-it"
+        ]
+    },
+    {
+        "type": "iFlow",
+        "model": "deepseek-v3.2",
+        "endpoint": "https://apis.iflow.cn/v1/chat/completions",
+        "apiKey": "",
+        "enrollmentUrl": "https://platform.iflow.cn/docs",
+        "modelListUrl": "https://platform.iflow.cn/models",
+        "notes": "open-source models available.",
+        "needVPN": false,
+        "hasApiKey": true,
+        "hasEndpoint": true,
+        "modelOptions": [],
+        "modelPool": [
+            "qwen3-235b-a22b-instruct",
+            "qwen3-235b-a22b-thinking-2507",
+            "deepseek-v3.2",
+            "kimi-k2-0905",
+            "qwen3-max",
+            "qwen3-vl-plus",
+            "tstars2.0"
+        ]
+    },
+    {
+        "type": "StreamLake",
+        "model": "ep-lt9stk-1761283739198127267",
+        "endpoint": "https://vanchin.streamlake.ai/api/gateway/v1/endpoints/chat/completions",
+        "apiKey": "",
+        "enrollmentUrl": "https://console.streamlake.ai/",
+        "modelListUrl": "https://console.streamlake.ai/wanqing",
+        "notes": "KAT-Coder model. Need login to get model name",
+        "needVPN": false,
+        "hasApiKey": true,
+        "hasEndpoint": true,
+        "modelOptions": [
+            {
+                "maxTokens": "4096",
+                "modalities": [
+                    "text"
+                ],
+                "model": "ep-lt9stk-1761283739198127267",
+                "enableTopP": false
+            }
+        ],
+        "modelPool": [
+            "ep-lt9stk-1761283739198127267"
+        ]
+    },
+    {
+        "type": "BaiLing",
+        "model": "Ling-1T",
+        "endpoint": "https://api.tbox.cn/api/llm/v1/chat/completions",
+        "apiKey": "",
+        "enrollmentUrl": "https://ling.tbox.cn/open",
+        "modelListUrl": "",
+        "notes": "",
+        "needVPN": false,
+        "hasApiKey": true,
+        "hasEndpoint": true,
+        "modelOptions": [],
+        "modelPool": [
+            "Ling-1T",
+            "Ring-1T"
+        ]
+    },
+    {
+        "type": "SiliconFlow",
+        "model": "THUDM/GLM-4.1V-9B-Thinking",
+        "endpoint": "https://api.siliconflow.cn/v1/chat/completions",
+        "apiKey": "",
+        "enrollmentUrl": "https://cloud.siliconflow.cn/me/account/ak",
+        "modelListUrl": "https://cloud.siliconflow.cn/me/models",
+        "needVPN": false,
+        "notes": "for text: 1,000 RPM 50,000 TPM. for image: 2 IPM ,400 IPD.",
+        "hasApiKey": true,
+        "hasEndpoint": true,
+        "modelOptions": [
+            {
+                "maxTokens": "16384",
+                "modalities": [
+                    "image"
+                ],
+                "model": "Kwai-Kolors/Kolors",
+                "enableTopP": true
+            },
+            {
+                "maxTokens": "16384",
+                "modalities": [
+                    "asr"
+                ],
+                "model": "TeleAI/TeleSpeechASR",
+                "enableTopP": true
+            },
+            {
+                "maxTokens": "16384",
+                "modalities": [
+                    "asr"
+                ],
+                "model": "FunAudioLLM/SenseVoiceSmall",
+                "enableTopP": true
+            }
+        ],
+        "modelPool": [
+            "THUDM/GLM-4.1V-9B-Thinking",
+            "Qwen/Qwen3-8B",
+            "tencent/Hunyuan-MT-7B",
+            "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+            "THUDM/GLM-Z1-9B-0414",
+            "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+            "Qwen/Qwen2.5-7B-Instruct",
+            "Qwen/Qwen2.5-Coder-7B-Instruct",
+            "THUDM/GLM-4-9B-0414",
+            "internlm/internlm2_5-7b-chat",
+            "THUDM/glm-4-9b-chat",
+            "Qwen/Qwen2-7B-Instruct",
+            "Kwai-Kolors/Kolors",
+            "TeleAI/TeleSpeechASR",
+            "FunAudioLLM/SenseVoiceSmall"
+        ]
+    },
+    {
+        "type": "OpenRouter",
+        "model": "meta-llama/llama-4-maverick:free",
+        "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+        "apiKey": "",
+        "modelListUrl": "https://openrouter.ai/models?max_price=0",
+        "needVPN": true,
+        "enrollmentUrl": "https://openrouter.ai/settings/keys",
+        "notes": "",
+        "hasApiKey": true,
+        "hasEndpoint": true,
+        "modelOptions": [
+            {
+                "maxTokens": "1900000",
+                "modalities": [
+                    "text"
+                ],
+                "model": "x-ai/grok-4-fast:free",
+                "quality": 2,
+                "enableTopP": true
+            },
+            {
+                "maxTokens": "1900000",
+                "modalities": [
+                    "text"
+                ],
+                "model": "x-ai/grok-4.1-fast:free",
+                "quality": 3,
+                "enableTopP": true
+            },
+            {
+                "maxTokens": "1900000",
+                "modalities": [
+                    "text"
+                ],
+                "model": "x-ai/grok-4.1-fast",
+                "quality": 3,
+                "enableTopP": true
+            },
+            {
+                "maxTokens": "128k",
+                "modalities": [
+                    "text"
+                ],
+                "model": "meituan/longcat-flash-chat:free",
+                "enableTopP": true
+            },
+            {
+                "maxTokens": "128k",
+                "modalities": [
+                    "text"
+                ],
+                "model": "alibaba/tongyi-deepresearch-30b-a3b:free",
+                "enableTopP": true
+            },
+            {
+                "maxTokens": "128k",
+                "modalities": [
+                    "text"
+                ],
+                "model": "meta-llama/llama-4-maverick:free",
+                "enableTopP": true
+            }
+        ],
+        "modelPool": [
+            "stepfun/step-3.5-flash:free",
+            "arcee-ai/trinity-large-preview:free",
+            "x-ai/grok-4.1-fast",
+            "mistralai/devstral-2512:free",
+            "sourceful/riverflow-v2-max-preview",
+            "sourceful/riverflow-v2-standard-preview",
+            "sourceful/riverflow-v2-fast-preview",
+            "nex-agi/deepseek-v3.1-nex-n1:free",
+            "amazon/nova-2-lite-v1:free",
+            "arcee-ai/trinity-mini:free",
+            "tngtech/tng-r1t-chimera:free",
+            "allenai/olmo-3-32b-think:free",
+            "kwaipilot/kat-coder-pro:free",
+            "nvidia/nemotron-nano-12b-v2-vl:free",
+            "alibaba/tongyi-deepresearch-30b-a3b:free",
+            "nvidia/nemotron-nano-9b-v2:free",
+            "openai/gpt-oss-120b:free",
+            "openai/gpt-oss-20b:free",
+            "z-ai/glm-4.5-air:free",
+            "qwen/qwen3-coder:free",
+            "moonshotai/kimi-k2:free",
+            "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+            "google/gemma-3n-e2b-it:free",
+            "tngtech/deepseek-r1t2-chimera:free",
+            "google/gemma-3n-e4b-it:free",
+            "qwen/qwen3-4b:free",
+            "qwen/qwen3-235b-a22b:free",
+            "tngtech/deepseek-r1t-chimera:free",
+            "mistralai/mistral-small-3.1-24b-instruct:free",
+            "google/gemma-3-4b-it:free",
+            "google/gemma-3-12b-it:free",
+            "google/gemma-3-27b-it:free",
+            "google/gemini-2.0-flash-exp:free",
+            "meta-llama/llama-3.3-70b-instruct:free",
+            "meta-llama/llama-3.2-3b-instruct:free",
+            "nousresearch/hermes-3-llama-3.1-405b:free",
+            "mistralai/mistral-7b-instruct:free"
+        ]
+    },
+    {
+        "type": "Gemini",
+        "model": "gemini-2.0-flash-exp-image-generation",
+        "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent",
+        "apiKey": "",
+        "enrollmentUrl": "https://ai.google.dev/gemini-api/docs/quickstart",
+        "modelListUrl": "https://console.cloud.google.com/apis/api/generativelanguage.googleapis.com/quotas?pageState=(%22allQuotasTable%22:(%22p%22:0,%22f%22:%22%255B%257B_22k_22_3A_22%25E7%25BB%25B4%25E5%25BA%25A6%25EF%25BC%2588%25E4%25BE%258B%25E5%25A6%2582%25E4%25BD%258D%25E7%25BD%25AE%25EF%25BC%2589_22_2C_22t_22_3A10_2C_22v_22_3A_22_5C_22model_5C_22_22_2C_22i_22_3A_22displayDimensions_22%257D_2C%257B_22k_22_3A_22%25E5%2590%258D%25E7%25A7%25B0_22_2C_22t_22_3A10_2C_22v_22_3A_22_5C_22free_5C_22_22_2C_22i_22_3A_22displayName_22%257D_2C%257B_22k_22_3A_22%25E7%25BB%25B4%25E5%25BA%25A6%25EF%25BC%2588%25E4%25BE%258B%25E5%25A6%2582%25E4%25BD%258D%25E7%25BD%25AE%25EF%25BC%2589_22_2C_22t_22_3A10_2C_22v_22_3A_22_5C_22gemini_5C_22_22_2C_22i_22_3A_22displayDimensions_22%257D_2C%257B_22k_22_3A_22%25E5%2580%25BC_22_2C_22t_22_3A2_2C_22v_22_3A_22%257B_5C_22v_5C_22_3A_5C_220_5C_22_2C_5C_22o_5C_22_3A_5C_22%253E_5C_22%257D_22_2C_22i_22_3A_22effectiveLimit_22%257D%255D%22,%22s%22:%5B(%22i%22:%22displayDimensions%22,%22s%22:%220%22),(%22i%22:%22effectiveLimit%22,%22s%22:%220%22),(%22i%22:%22currentPercent%22,%22s%22:%221%22),(%22i%22:%22sevenDayPeakPercent%22,%22s%22:%220%22),(%22i%22:%22currentUsage%22,%22s%22:%221%22),(%22i%22:%22sevenDayPeakUsage%22,%22s%22:%220%22),(%22i%22:%22serviceTitle%22,%22s%22:%220%22),(%22i%22:%22displayName%22,%22s%22:%220%22)%5D,%22c%22:%5B%22type%22,%22metricName%22,%22limitName%22,%22monitoredResource%22%5D))",
+        "note": "https://console.cloud.google.com/apis/api/generativelanguage.googleapis.com/quotas?pageState=(%22allQuotasTable%22:(%22p%22:0,%22f%22:%22%255B%257B_22k_22_3A_22%25E7%25BB%25B4%25E5%25BA%25A6%25EF%25BC%2588%25E4%25BE%258B%25E5%25A6%2582%25E4%25BD%258D%25E7%25BD%25AE%25EF%25BC%2589_22_2C_22t_22_3A10_2C_22v_22_3A_22_5C_22model_5C_22_22_2C_22i_22_3A_22displayDimensions_22%257D_2C%257B_22k_22_3A_22%25E5%2590%258D%25E7%25A7%25B0_22_2C_22t_22_3A10_2C_22v_22_3A_22_5C_22free_5C_22_22_2C_22i_22_3A_22displayName_22%257D_2C%257B_22k_22_3A_22%25E7%25BB%25B4%25E5%25BA%25A6%25EF%25BC%2588%25E4%25BE%258B%25E5%25A6%2582%25E4%25BD%258D%25E7%25BD%25AE%25EF%25BC%2589_22_2C_22t_22_3A10_2C_22v_22_3A_22_5C_22gemini_5C_22_22_2C_22i_22_3A_22displayDimensions_22%257D_2C%257B_22k_22_3A_22%25E5%2580%25BC_22_2C_22t_22_3A2_2C_22v_22_3A_22%257B_5C_22v_5C_22_3A_5C_220_5C_22_2C_5C_22o_5C_22_3A_5C_22%253E_5C_22%257D_22_2C_22i_22_3A_22effectiveLimit_22%257D%255D%22,%22s%22:%5B(%22i%22:%22displayDimensions%22,%22s%22:%220%22),(%22i%22:%22effectiveLimit%22,%22s%22:%220%22),(%22i%22:%22currentPercent%22,%22s%22:%221%22),(%22i%22:%22sevenDayPeakPercent%22,%22s%22:%220%22),(%22i%22:%22currentUsage%22,%22s%22:%221%22),(%22i%22:%22sevenDayPeakUsage%22,%22s%22:%220%22),(%22i%22:%22serviceTitle%22,%22s%22:%220%22),(%22i%22:%22displayName%22,%22s%22:%220%22)%5D,%22c%22:%5B%22type%22,%22metricName%22,%22limitName%22,%22monitoredResource%22%5D))",
+        "hasApiKey": true,
+        "hasEndpoint": true,
+        "modelOptions": [
+            {
+                "maxTokens": "65k",
+                "modalities": [
+                    "text",
+                    "vision"
+                ],
+                "model": "gemini-2.5-pro",
+                "enableTopP": true
+            },
+            {
+                "maxTokens": "64k",
+                "modalities": [
+                    "text",
+                    "vision"
+                ],
+                "model": "gemini-2.5-flash",
+                "enableTopP": true
+            },
+            {
+                "maxTokens": "32k",
+                "modalities": [
+                    "text",
+                    "vision"
+                ],
+                "model": "gemini-2.0-flash",
+                "enableTopP": true
+            },
+            {
+                "maxTokens": "8k",
+                "modalities": [
+                    "text"
+                ],
+                "model": "gemini-2.0-flash-lite",
+                "enableTopP": true
+            },
+            {
+                "maxTokens": "32k",
+                "modalities": [
+                    "text",
+                    "vision",
+                    "image"
+                ],
+                "model": "gemini-2.0-flash-preview-image-generation",
+                "enableTopP": true
+            },
+            {
+                "maxTokens": "128k",
+                "modalities": [
+                    "text"
+                ],
+                "model": "gemma-3n-e4b-it",
+                "enableTopP": true
+            },
+            {
+                "maxTokens": "128k",
+                "modalities": [
+                    "text"
+                ],
+                "model": "gemma-3-27b-it",
+                "enableTopP": true
+            }
+        ],
+        "modelPool": [
+            "gemini-2.5",
+            "gemini-2.5-pro",
+            "gemini-2.5-flash",
+            "gemini-2.5-flash-exp",
+            "gemini-2.5-flash-lite-preview-06-17",
+            "gemini-2.5-flash-live",
+            "gemini-2.5-pro-1p-freebie",
+            "gemini-2.0-flash",
+            "gemini-2.0-flash-lite",
+            "gemini-2.0-flash-preview-image-generation",
+            "gemma-3n-e4b-it",
+            "gemma-3-27b-it"
+        ]
+    },
+    {
+        "type": "Grok",
+        "model": "grok-2-latest",
+        "endpoint": "https://api.x.ai/v1/chat/completions",
+        "apiKey": "",
+        "enrollmentUrl": null,
+        "hasApiKey": true,
+        "hasEndpoint": true,
+        "modelOptions": [],
+        "modelPool": [
+            "grok-3-mini",
+            "grok-3-mini-fast",
+            "grok-2-latest",
+            "grok-3",
+            "grok-3-fast",
+            "grok-2-image"
+        ]
+    },
+    {
+        "type": "Pollinations",
+        "model": "openai",
+        "endpoint": "https://text.pollinations.ai/",
+        "apiKey": "",
+        "modelListUrl": "https://text.pollinations.ai/models",
+        "needVPN": false,
+        "enrollmentUrl": "https://enter.pollinations.ai/",
+        "hasApiKey": true,
+        "hasEndpoint": true,
+        "modelOptions": [
+            {
+                "maxTokens": "65k",
+                "modalities": [
+                    "tts"
+                ],
+                "model": "openai-audio",
+                "enableTopP": true
+            }
+        ],
+        "modelPool": [
+            "deepseek",
+            "deepseek-reasoning",
+            "gemini",
+            "gemini-search",
+            "mistral",
+            "nova-fast",
+            "openai",
+            "openai-audio",
+            "openai-fast",
+            "openai-large",
+            "openai-reasoning",
+            "qwen-coder",
+            "roblox-rp",
+            "bidara",
+            "chickytutor",
+            "evil",
+            "midijourney",
+            "rtist",
+            "unity"
+        ]
+    },
+    {
+        "type": "Mistral",
+        "model": "mistral-large-latest",
+        "endpoint": "https://api.mistral.ai/v1/chat/completions",
+        "apiKey": "",
+        "enrollmentUrl": null,
+        "hasApiKey": true,
+        "hasEndpoint": true,
+        "modelOptions": [],
+        "modelPool": [
+            "magistral-medium-latest",
+            "magistral-small-latest",
+            "mistral-medium-latest",
+            "mistral-large-latest",
+            "pixtral-large-latest",
+            "ministral-3b-latest",
+            "ministral-8b-latest",
+            "open-mistral-nemo",
+            "mistral-small-latest",
+            "devstral-small-latest",
+            "mistral-saba-latest"
+        ]
+    },
+    {
+        "type": "BigModel",
+        "model": "glm-4-flashx",
+        "endpoint": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+        "apiKey": "",
+        "modelListUrl": "https://open.bigmodel.cn/console/modelcenter/square",
+        "needVPN": false,
+        "notes": "",
+        "enrollmentUrl": null,
+        "hasApiKey": true,
+        "hasEndpoint": true,
+        "modelOptions": [
+            {
+                "maxTokens": "128k",
+                "modalities": [
+                    "image"
+                ],
+                "model": "CogView-3-Flash",
+                "enableTopP": true
+            },
+            {
+                "maxTokens": "128k",
+                "modalities": [
+                    "video"
+                ],
+                "model": "CogVideoX-Flash",
+                "enableTopP": true
+            }
+        ],
+        "modelPool": [
+            "glm-4-flashx",
+            "glm-4-flash",
+            "glm-4-flash-250414",
+            "GLM-4.5-Flash",
+            "CogView-3-Flash",
+            "GLM-Z1-Flash",
+            "CogVideoX-Flash"
+        ]
+    },
+    {
+        "type": "ModelScope",
+        "model": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+        "endpoint": "https://api-inference.modelscope.cn/v1/chat/completions",
+        "apiKey": "",
+        "modelListUrl": "https://modelscope.cn/models?filter=inference_type&page=1&tabKey=task",
+        "enrollmentUrl": "https://modelscope.cn/home",
+        "hasApiKey": true,
+        "hasEndpoint": true,
+        "modelOptions": [
+            {
+                "maxTokens": "32768",
+                "modalities": [
+                    "text"
+                ],
+                "model": "Kwai-Keye/Keye-VL-671B-A37B",
+                "enableTopP": true,
+                "quality": 2
+            },
+            {
+                "maxTokens": "32768",
+                "modalities": [
+                    "text"
+                ],
+                "model": "ZhipuAI/GLM-5",
+                "enableTopP": false,
+                "quality": 3
+            },
+            {
+                "maxTokens": "32768",
+                "modalities": [
+                    "text"
+                ],
+                "model": "ZhipuAI/GLM-4.7",
+                "enableTopP": false,
+                "quality": 2
+            },
+            {
+                "maxTokens": "32768",
+                "modalities": [
+                    "text"
+                ],
+                "model": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+                "enableTopP": true
+            },
+            {
+                "maxTokens": "128k",
+                "modalities": [
+                    "text"
+                ],
+                "model": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+                "quality": 2,
+                "enableTopP": true
+            },
+            {
+                "maxTokens": "128k",
+                "modalities": [
+                    "text"
+                ],
+                "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+                "quality": 2,
+                "enableTopP": true
+            },
+            {
+                "maxTokens": "32k",
+                "modalities": [
+                    "text"
+                ],
+                "model": "moonshotai/Kimi-K2-Instruct",
+                "quality": 2,
+                "enableTopP": true
+            },
+            {
+                "maxTokens": "80k",
+                "modalities": [
+                    "text"
+                ],
+                "model": "MiniMax/MiniMax-M1-80k",
+                "enableTopP": true
+            },
+            {
+                "maxTokens": "32k",
+                "modalities": [
+                    "text"
+                ],
+                "model": "PaddlePaddle/ERNIE-4.5-21B-A3B-PT",
+                "enableTopP": true
+            },
+            {
+                "maxTokens": "32k",
+                "modalities": [
+                    "text"
+                ],
+                "model": "mistralai/Mistral-Small-24B-Base-2501",
+                "enableTopP": true
+            }
+        ],
+        "modelPool": [
+            "MiniMax/MiniMax-M2.5",
+            "Qwen/Qwen3.5-397B-A17B",
+            "meituan-longcat/LongCat-Flash-Lite",
+            "XiaomiMiMo/MiMo-V2-Flash",
+            "ZhipuAI/GLM-5",
+            "ZhipuAI/GLM-4.7",
+            "ZhipuAI/GLM-4.6V",
+            "deepseek-ai/DeepSeek-V3.2-Exp",
+            "Kwai-Keye/Keye-VL-671B-A37B",
+            "MiniMax/MiniMax-M2",
+            "Qwen/Qwen3-VL-8B-Instruct",
+            "Qwen/Qwen3-Next-80B-A3B-Instruct",
+            "Qwen/Qwen3-235B-A22B-Thinking-2507",
+            "Qwen/Qwen3-235B-A22B-Instruct-2507",
+            "moonshotai/Kimi-K2-Instruct",
+            "MiniMax/MiniMax-M1-80k",
+            "PaddlePaddle/ERNIE-4.5-21B-A3B-PT",
+            "mistralai/Mistral-Small-24B-Base-2501"
+        ]
+    },
+    {
+        "type": "Cerebras",
+        "model": "gpt-oss-120b",
+        "endpoint": "https://api.cerebras.ai/v1/chat/completions",
+        "apiKey": "",
+        "enrollmentUrl": "https://www.cerebras.ai/",
+        "modelListUrl": "https://inference-docs.cerebras.ai/models/overview",
+        "needVPN": true,
+        "hasApiKey": true,
+        "hasEndpoint": true,
+        "modelOptions": [],
+        "modelPool": [
+            "llama3.1-8b",
+            "gpt-oss-120b",
+            "qwen-3-235b-a22b-instruct-2507",
+            "zai-glm-4.7"
+        ]
+    },
+    {
+        "type": "Github",
+        "model": "xai/grok-3",
+        "endpoint": "https://models.github.ai/inference/chat/completions",
+        "enrollmentUrl": "https://docs.github.com/en/github-models/quickstart",
+        "modelListUrl": "https://github.com/marketplace/models",
+        "apiKey": "",
+        "hasApiKey": true,
+        "hasEndpoint": true,
+        "modelOptions": [
+            {
+                "maxTokens": "32k",
+                "modalities": [
+                    "text"
+                ],
+                "model": "xai/grok-3",
+                "quality": 2,
+                "enableTopP": true
+            }
+        ],
+        "modelPool": [
+            "openai/gpt-4.1",
+            "openai/o1",
+            "xai/grok-3",
+            "microsoft/Phi-4-reasoning",
+            "ai21-labs/AI21-Jamba-1.5-Large",
+            "mistral-ai/Codestral-2501",
+            "xai/grok-3-mini",
+            "meta/Llama-3.2-90B-Vision-Instruct"
+        ]
+    },
+    {
+        "type": "Moonshot",
+        "model": "kimi-k2-thinking",
+        "endpoint": "https://api.moonshot.ai/v1/chat/completions",
+        "apiKey": "",
+        "enrollmentUrl": "https://platform.moonshot.cn/docs/overview",
+        "modelListUrl": "https://platform.moonshot.cn/docs/pricing/chat#%E4%BA%A7%E5%93%81%E5%AE%9A%E4%BB%B7",
+        "notes": "for free use: 3 RPM; 500,000 TPM; 1,500,000 TPD",
+        "hasApiKey": true,
+        "hasEndpoint": true,
+        "modelOptions": [
+            {
+                "maxTokens": "32k",
+                "modalities": [
+                    "text"
+                ],
+                "model": "kimi-k2-thinking",
+                "quality": 2,
+                "enableTopP": true
+            }
+        ],
+        "modelPool": [
+            "kimi-k2-thinking",
+            "kimi-k2-turbo-preview",
+            "kimi-k2-0905-preview"
+        ]
+    },
+    {
+        "type": "MiniMax",
+        "model": "MiniMax-M2",
+        "endpoint": "https://api.minimaxi.com/v1/chat/completions",
+        "apiKey": "",
+        "enrollmentUrl": "https://platform.minimaxi.com/login",
+        "modelListUrl": "https://platform.minimaxi.com/docs/pricing/pay-as-you-go",
+        "notes": "20 RPM , 1,000,000 TPM for free use",
+        "hasApiKey": true,
+        "hasEndpoint": true,
+        "modelOptions": [],
+        "modelPool": [
+            "MiniMax-M2",
+            "MiniMax-M2-Stable"
+        ]
+    },
+    {
+        "type": "Nvidia",
+        "model": "meta/llama-4-maverick-17b-128e-instruct",
+        "endpoint": "https://integrate.api.nvidia.com/v1/chat/completions",
+        "apiKey": "",
+        "enrollmentUrl": "https://build.nvidia.com/settings/api-keys",
+        "modelListUrl": "https://docs.api.nvidia.com/nim/reference/llm-apis",
+        "hasApiKey": false,
+        "hasEndpoint": true,
+        "modelOptions": [],
+        "modelPool": [
+            "meta/llama-4-maverick-17b-128e-instruct",
+            "minimaxai/minimax-m2",
+            "moonshotai/kimi-k2-instruct-0905"
+        ]
+    },
+    {
+        "type": "Chatjimmy",
+        "model": "llama3.1-8B",
+        "endpoint": "https://chatjimmy.ai/api/chat",
+        "apiKey": "",
+        "enrollmentUrl": "https://chatjimmy.ai",
+        "notes": "Free, no API key needed",
+        "needVPN": false,
+        "hasApiKey": false,
+        "hasEndpoint": true,
+        "modelOptions": [],
+        "modelPool": [
+            "llama3.1-8B"
+        ]
+    },
+    {
+        "type": "Sambanova",
+        "model": "DeepSeek-R1-0528",
+        "endpoint": "https://api.sambanova.ai/v1/chat/completions",
+        "apiKey": "",
+        "enrollmentUrl": "https://docs.sambanova.ai/docs/en/get-started/api-keys-urls",
+        "notes": "RPM 20 - 40, RPD 40, TPD 200000 for free use",
+        "needVPN": false,
+        "hasApiKey": false,
+        "hasEndpoint": true,
+        "modelOptions": [],
+        "modelPool": [
+            "DeepSeek-R1-0528",
+            "DeepSeek-V3-0324",
+            "DeepSeek-V3.1",
+            "DeepSeek-R1-Distill-Llama-70B",
+            "Meta-Llama-3.3-70B-Instruct",
+            "Meta-Llama-3.1-8B-Instruct",
+            "Llama-4-Maverick-17B-128E-Instruct",
+            "gpt-oss-120b",
+            "Whisper-Large-v3",
+            "Qwen3-235B-A22B-Instruct-2507",
+            "Qwen3-32B",
+            "Llama-3.3-Swallow-70B-Instruct-v0.4",
+            "E5-Mistral-7B-Instruct"
+        ]
+    },
+    {
+        "type": "Groq",
+        "model": "openai/gpt-oss-120b",
+        "endpoint": "https://api.groq.com/openai/v1/chat/completions",
+        "apiKey": "",
+        "enrollmentUrl": "https://console.groq.com/keys",
+        "modelListUrl": "https://console.groq.com/docs/models",
+        "hasApiKey": true,
+        "hasEndpoint": true,
+        "modelListAbleToFetch": true,
+        "modelOptions": [],
+        "modelPool": [
+            "llama-3.1-8b-instant",
+            "llama-3.3-70b-versatile",
+            "openai/gpt-oss-120b",
+            "canopylabs/orpheus-v1-english",
+            "moonshotai/kimi-k2-instruct-0905"
+        ]
+    },
+    {
+        "type": "Ollama Cloud",
+        "model": "gpt-oss:20b-cloud",
+        "endpoint": "https://ollama.com/api/chat",
+        "apiKey": "",
+        "enrollmentUrl": "https://ollama.com/settings/keys",
+        "modelListUrl": "https://ollama.com/search",
+        "hasApiKey": true,
+        "hasEndpoint": true,
+        "modelListAbleToFetch": true,
+        "modelOptions": [],
+        "modelPool": []
+    },
+    {
+        "type": "LM-Studio",
+        "model": "google/gemma-3-4b",
+        "endpoint": "http://localhost:1234/v1/chat/completions",
+        "apiKey": "",
+        "enrollmentUrl": null,
+        "hasApiKey": false,
+        "hasEndpoint": true,
+        "modelListAbleToFetch": true,
+        "modelOptions": [],
+        "modelPool": [
+            "qwen3-vl-8b-instruct-abliterated-v2.0",
+            "google/gemma-3-4b",
+            "zai-org/glm-4.6v-flash",
+            "qwen/qwen3-30b-a3b-2507"
+        ]
+    }
+]
