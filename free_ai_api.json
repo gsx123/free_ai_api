@@ -835,6 +835,31 @@
         ]
     },
     {
+        "type": "AIMLAPI",
+        "model": "gemma-3-12b-it",
+        "endpoint": "https://api.aimlapi.com/v1/chat/completions",
+        "enrollmentUrl": "https://aimlapi.com/app/keys",
+        "apiKey": "",
+        "modelPool": [
+            "gemma-3n-e4b-it",
+            "gemma-3-12b-it",
+            "baidu/ernie-4-5-0-3b"
+        ]
+    },
+    {
+        "type": "Longcat",
+        "model": "LongCat-Flash-Chat",
+        "endpoint": "https://api.longcat.chat/openai/v1/chat/completions",
+        "enrollmentUrl": "https://longcat.chat/platform/api_keys",
+        "apiKey": "",
+        "modelPool": [
+            "LongCat-Flash-Chat",
+            "LongCat-Flash-Thinking",
+            "LongCat-Flash-Thinking-2601",
+            "LongCat-Flash-Lite"
+        ]
+    },
+    {
         "type": "Ollama Cloud",
         "model": "gpt-oss:20b-cloud",
         "endpoint": "https://ollama.com/api/chat",
