@@ -864,7 +864,7 @@
         "endpoint": "https://riffle-sidekick.gsx123.workers.dev/api/v1/chat/completions",
         "model": "meta/llama-4-maverick-17b-128e-instruct",
         "apiKey": "",
-        "hasApiKey": false,
+        "hasApiKey": true,
         "enrollmentUrl": "https://riffle-sidekick.gsx123.workers.dev",
         "modelPool": [
             "meta/llama-4-maverick-17b-128e-instruct",
