@@ -1323,8 +1323,13 @@
         "hasEndpoint": true,
         "modelOptions": [],
         "modelPool": [
-            "doubao-1.5-vision-pro-250328",
-            "doubao-seed-2-0-pro-260215"
+            "doubao-seed-2-0-lite-260215",
+            "doubao-seed-2-0-mini-260215",
+            "doubao-seed-2-0-pro-260215",
+            "doubao-seed-1-8-251228",
+            "doubao-seed-1-6-251015",
+            "doubao-1-5-thinking-vision-pro-250428",
+            "doubao-1.5-vision-pro-250328"
         ]
     }
 ]
