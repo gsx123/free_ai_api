@@ -1309,5 +1309,22 @@
             "deepseek-ai/DeepSeek-R1",
             "Qwen/Qwen3-Coder-480B-A35B-Instruct"
         ]
+    },
+    {
+        "type": "Volcengine",
+        "model": "doubao-1.5-vision-pro-250328",
+        "endpoint": "https://ark.cn-beijing.volces.com/api/v3/chat/completions",
+        "apiKey": "",
+        "enrollmentUrl": "https://console.volcengine.com/ark/region:ark+cn-beijing/endpoint",
+        "modelListUrl": "https://console.volcengine.com/ark/region:ark+cn-beijing/model?groupType=ModelGroups&vendor=Bytedance&view=DEFAULT_VIEW",
+        "notes": "",
+        "needVPN": false,
+        "hasApiKey": true,
+        "hasEndpoint": true,
+        "modelOptions": [],
+        "modelPool": [
+            "doubao-1.5-vision-pro-250328",
+            "doubao-seed-2-0-pro-260215"
+        ]
     }
 ]
