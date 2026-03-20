@@ -26,7 +26,24 @@
         "needVPN": true,
         "hasApiKey": true,
         "hasEndpoint": true,
-        "modelOptions": [],
+        "modelOptions": [
+            {
+                "maxTokens": "65536",
+                "modalities": [
+                    "audio-input"
+                ],
+                "model": "gemini-2.5-pro",
+                "enableTopP": true
+            },
+            {
+                "maxTokens": "65536",
+                "modalities": [
+                    "audio-input"
+                ],
+                "model": "gemini-2.5-flash",
+                "enableTopP": true
+            }
+        ],
         "modelPool": [
             "gpt-5.2",
             "gpt-4.1-mini",
@@ -413,6 +430,7 @@
             }
         ],
         "modelPool": [
+            "gemini-3.1-pro",
             "gemini-2.5-pro-1p-freebie",
             "gemini-3-flash",
             "gemini-2.5",
@@ -703,6 +721,15 @@
                     "text"
                 ],
                 "model": "xai/grok-3",
+                "quality": 2,
+                "enableTopP": true
+            },
+            {
+                "maxTokens": "32k",
+                "modalities": [
+                    "audio-input"
+                ],
+                "model": "openai/o1",
                 "quality": 2,
                 "enableTopP": true
             }
