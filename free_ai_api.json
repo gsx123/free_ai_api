@@ -1362,5 +1362,57 @@
             "doubao-1-5-thinking-vision-pro-250428",
             "doubao-1.5-vision-pro-250328"
         ]
+    },
+    {
+        "type": "Vercel",
+        "model": "gpt-4o-mini",
+        "endpoint": "https://ai-gateway.vercel.sh/v1/chat/completions",
+        "apiKey": "",
+        "enrollmentUrl": "https://vercel.com/d?to=%2F%5Bteam%5D%2F%7E%2Fai-gateway%2Fapi-keys&title=AI+Gateway+API+Keys",
+        "modelListUrl": "https://vercel.com/d?to=%2F%5Bteam%5D%2F%7E%2Fai-gateway%2Fmodels&title=AI+Models",
+        "notes": "Monthly credit $5/month included",
+        "needVPN": true,
+        "hasApiKey": true,
+        "hasEndpoint": true,
+        "modelOptions": [
+            {
+                "maxTokens": "1048576",
+                "modalities": [
+                    "audio-input"
+                ],
+                "model": "google/gemini-3-flash",
+                "enableTopP": true
+            },
+            {
+                "maxTokens": "1048576",
+                "modalities": [
+                    "audio-input"
+                ],
+                "model": "anthropic/claude-opus-4.6",
+                "enableTopP": true
+            }
+        ],
+        "modelPool": [
+            "anthropic/claude-opus-4.6",
+            "google/gemini-3-flash",
+            "kwaipilot/kat-coder-pro-v1",
+            "anthropic/claude-sonnet-4.6",
+            "minimax/minimax-m2.5",
+            "zai/glm-5",
+            "google/gemini-2.5-flash-lite",
+            "anthropic/claude-haiku-4.5",
+            "moonshotai/kimi-k2.5",
+            "google/gemini-3.1-pro-preview",
+            "openai/gpt-5.4",
+            "anthropic/claude-3.7-sonnet",
+            "anthropic/claude-sonnet-4.5",
+            "google/gemini-2.5-flash",
+            "openai/gpt-5.2",
+            "google/gemini-3.1-flash-lite-preview",
+            "anthropic/claude-sonnet-4",
+            "anthropic/claude-opus-4.5",
+            "xai/grok-4.1-fast-non-reasoning",
+            "openai/gpt-5.1-instant"
+        ]
     }
 ]
