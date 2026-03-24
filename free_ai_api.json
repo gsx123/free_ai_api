@@ -1418,7 +1418,7 @@
     {
         "type": "OpenCode",
         "model": "opencode/big-pickle",
-        "endpoint": "https://opencode.ai/zen/go/v1/chat/completions",
+        "endpoint": "https://opencode.ai/zen/v1/chat/completions",
         "apiKey": "",
         "enrollmentUrl": "https://opencode.ai/workspace/wrk_01KMEJ1FG1FJHBRGH2SRBGBYSM/keys",
         "modelListUrl": "https://opencode.ai/docs/zen/",
