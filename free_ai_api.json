@@ -13,7 +13,8 @@
         "modelOptions": [],
         "modelPool": [
             "mimo-v2-flash"
-        ]
+        ],
+        "disabled": true
     },
     {
         "type": "NavyAI",
@@ -64,7 +65,7 @@
     },
     {
         "type": "ZenMux",
-        "model": "google/gemini-3-flash-preview-free",
+        "model": "z-ai/glm-4.7-flash-free",
         "endpoint": "https://zenmux.ai/api/v1/chat/completions",
         "apiKey": "",
         "enrollmentUrl": "https://docs.zenmux.ai/guide/quickstart.html",
@@ -73,39 +74,12 @@
         "needVPN": true,
         "hasApiKey": true,
         "hasEndpoint": true,
-        "modelOptions": [
-            {
-                "maxTokens": "16384",
-                "modalities": [
-                    "image"
-                ],
-                "model": "google/gemini-2.5-flash-image-free",
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "65536",
-                "modalities": [
-                    "image"
-                ],
-                "model": "google/gemini-3-pro-image-preview-free",
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "65536",
-                "modalities": [
-                    "text"
-                ],
-                "model": "google/gemini-3-pro-preview-free",
-                "quality": 3,
-                "enableTopP": true
-            }
-        ],
+        "modelOptions": [],
         "modelPool": [
             "stepfun/step-3.5-flash-free",
             "z-ai/glm-4.7-flash-free",
             "z-ai/glm-4.6v-flash",
             "kuaishou/kat-coder-pro-v1",
-            "google/gemini-3-flash-preview-free",
             "xiaomi/mimo-v2-flash-free"
         ]
     },
@@ -127,7 +101,8 @@
             "meituan-longcat/LongCat-Flash-Chat-FP8",
             "zai-org/GLM-4.5-Air",
             "unsloth/gemma-3-4b-it"
-        ]
+        ],
+        "disabled": true
     },
     {
         "type": "iFlow",
@@ -136,7 +111,7 @@
         "apiKey": "",
         "enrollmentUrl": "https://platform.iflow.cn/docs",
         "modelListUrl": "https://platform.iflow.cn/models",
-        "notes": "open-source models available.",
+        "notes": "open-source models available. iFlow API end at 2026/4/17",
         "needVPN": false,
         "hasApiKey": true,
         "hasEndpoint": true,
@@ -149,7 +124,8 @@
             "qwen3-max",
             "qwen3-vl-plus",
             "tstars2.0"
-        ]
+        ],
+        "disabled": true
     },
     {
         "type": "StreamLake",
@@ -158,7 +134,7 @@
         "apiKey": "",
         "enrollmentUrl": "https://console.streamlake.ai/",
         "modelListUrl": "https://console.streamlake.ai/wanqing",
-        "notes": "KAT-Coder model. Need login to get model name",
+        "notes": "KAT-Coder model. Need login to get model name, only KAT-Coder-Air-V1 free",
         "needVPN": false,
         "hasApiKey": true,
         "hasEndpoint": true,
@@ -168,13 +144,14 @@
                 "modalities": [
                     "text"
                 ],
-                "model": "ep-lt9stk-1761283739198127267",
+                "model": "ep-5gz7cw-1765187184458270589",
                 "enableTopP": false
             }
         ],
         "modelPool": [
-            "ep-lt9stk-1761283739198127267"
-        ]
+            "ep-5gz7cw-1765187184458270589"
+        ],
+        "disabled": true
     },
     {
         "type": "BaiLing",
@@ -182,15 +159,19 @@
         "endpoint": "https://api.tbox.cn/api/llm/v1/chat/completions",
         "apiKey": "",
         "enrollmentUrl": "https://ling.tbox.cn/open",
-        "modelListUrl": "",
-        "notes": "",
+        "modelListUrl": "https://alipaytbox.yuque.com/sxs0ba/ant-ling_docs/model_overview",
+        "notes": "Free quota per day: 500K computing units",
         "needVPN": false,
         "hasApiKey": true,
         "hasEndpoint": true,
         "modelOptions": [],
         "modelPool": [
             "Ling-1T",
-            "Ring-1T"
+            "Ring-1T",
+            "Ling-flash-2.0",
+            "Ling-mini-2.0",
+            "Ring-flash-2.0",
+            "Ring-mini-2.0"
         ]
     },
     {
