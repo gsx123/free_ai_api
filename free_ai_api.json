@@ -1250,6 +1250,18 @@
         "endpoint": "https://api.longcat.chat/openai/v1/chat/completions",
         "enrollmentUrl": "https://longcat.chat/platform/api_keys",
         "apiKey": "",
+        "modelOptions": [
+            {
+                "maxTokens": "32k",
+                "modalities": [
+                    "text",
+                    "audio-input"
+                ],
+                "model": "LongCat-Flash-Omni-2603",
+                "quality": 2,
+                "enableTopP": true
+            }
+        ],
         "modelPool": [
             "LongCat-Flash-Chat",
             "LongCat-Flash-Thinking",
