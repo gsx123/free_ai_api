@@ -294,6 +294,7 @@
             }
         ],
         "modelPool": [
+            "qwen/qwen3.6-plus-preview:free",
             "openrouter/hunter-alpha",
             "openrouter/healer-alpha",
             "nvidia/nemotron-3-super-120b-a12b:free",
