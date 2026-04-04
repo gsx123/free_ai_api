@@ -417,6 +417,15 @@
                 ],
                 "model": "gemma-3-27b-it",
                 "enableTopP": true
+            },
+            {
+                "maxTokens": "128k",
+                "modalities": [
+                    "text",
+                    "audio-input"
+                ],
+                "model": "gemma-4-e4b-it",
+                "enableTopP": true
             }
         ],
         "modelPool": [
