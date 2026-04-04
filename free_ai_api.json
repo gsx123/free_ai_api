@@ -486,6 +486,36 @@
         ]
     },
     {
+        "type": "Cohere",
+        "model": "command-r-plus",
+        "endpoint": "https://api.cohere.com/v2/chat",
+        "apiKey": "",
+        "enrollmentUrl": "https://dashboard.cohere.com/api-keys",
+        "modelListUrl": "https://docs.cohere.com/v2/docs/models",
+        "hasApiKey": true,
+        "hasEndpoint": true,
+        "modelOptions": [],
+        "modelPool": [
+            "command-a-03-2025",
+            "command-r-plus",
+            "command-r",
+            "command-r-fast",
+            "command-r-plus-fast",
+            "command-r-plus-preview",
+            "command-r-preview",
+            "command-r-fast-preview",
+            "command-r-plus-fast-preview",
+            "command-r-plus-preview-06-17",
+            "command-r-preview-06-17",
+            "command-r-fast-preview-06-17",
+            "command-r-plus-fast-preview-06-17",
+            "command-r-plus-preview-06-17",
+            "command-r-preview-06-17",
+            "command-r-fast-preview-06-17",
+            "command-r-plus-fast-preview-06-17"
+        ]
+    },
+    {
         "type": "Pollinations",
         "model": "openai",
         "endpoint": "https://text.pollinations.ai/",
