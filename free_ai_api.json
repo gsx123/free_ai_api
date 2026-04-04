@@ -434,7 +434,15 @@
             "gemini-2.0-flash-lite",
             "gemini-2.0-flash-preview-image-generation",
             "gemma-3n-e4b-it",
-            "gemma-3-27b-it"
+            "gemma-3-27b-it",
+            "gemma-4-31b-it",
+            "gemma-4-26b-a4b-it",
+            "gemma-4-31b",
+            "gemma-4-26b-a4b",
+            "gemma-4-e4b-it",
+            "gemma-4-e2b-it",
+            "gemma-4-e4b",
+            "gemma-4-e2b"
         ]
     },
     {
