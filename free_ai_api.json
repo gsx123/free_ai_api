@@ -1,1538 +1,1541 @@
-[
-    {
-        "type": "XiaoMi",
-        "model": "mimo-v2-flash",
-        "endpoint": "https://api.xiaomimimo.com/v1/chat/completions",
-        "apiKey": "",
-        "enrollmentUrl": "https://platform.xiaomimimo.com/#/docs/quick-start/first-api-call",
-        "modelListUrl": "https://platform.xiaomimimo.com/#/docs/pricing",
-        "notes": "150,000 tokens per day, 20 RPM",
-        "needVPN": false,
-        "hasApiKey": true,
-        "hasEndpoint": true,
-        "modelOptions": [],
-        "modelPool": [
-            "mimo-v2-flash"
-        ],
-        "disabled": true
-    },
-    {
-        "type": "NavyAI",
-        "model": "gpt-4.1-mini",
-        "endpoint": "https://api.navy/v1/chat/completions",
-        "apiKey": "",
-        "enrollmentUrl": "https://api.navy/docs/",
-        "modelListUrl": "https://api.navy/dashboard/#models",
-        "notes": "150,000 tokens per day, 20 RPM",
-        "needVPN": true,
-        "hasApiKey": true,
-        "hasEndpoint": true,
-        "modelOptions": [
-            {
-                "maxTokens": "65536",
-                "modalities": [
-                    "audio-input"
-                ],
-                "model": "gemini-2.5-pro",
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "65536",
-                "modalities": [
-                    "audio-input"
-                ],
-                "model": "gemini-2.5-flash",
-                "enableTopP": true
-            }
-        ],
-        "modelPool": [
-            "gpt-5.2",
-            "gpt-4.1-mini",
-            "gemini-2.5-pro",
-            "gemini-2.5-flash",
-            "gemini-3.1-flash-lite-preview",
-            "gemini-3.1-flash-lite-preview-thinking",
-            "deepseek-v3.2",
-            "grok-3-mini",
-            "grok-4-fast-non-reasoning",
-            "grok-4.1-fast-non-reasoning",
-            "grok-4.1-fast-reasoning",
-            "grok-4.20-non-reasoning",
-            "grok-4.20-reasoning",
-            "grok-uncensored",
-            "kimi-k2-thinking",
-            "longcat-flash-chat",
-            "qwen3-235b-a22b-thinking-2507",
-            "minimax-m2",
-            "sonar-pro",
-            "pixtral-large-latest",
-            "mistral-saba-latest",
-            "codestral-latest",
-            "skyfall-36b-v2"
-        ]
-    },
-    {
-        "type": "ZenMux",
-        "model": "z-ai/glm-4.7-flash-free",
-        "endpoint": "https://zenmux.ai/api/v1/chat/completions",
-        "apiKey": "",
-        "enrollmentUrl": "https://docs.zenmux.ai/guide/quickstart.html",
-        "modelListUrl": "https://zenmux.ai/models?sort=newest&keyword=free",
-        "notes": "Have cutting-edge gemini text/image models for free use , with a small number of free requests",
-        "needVPN": true,
-        "hasApiKey": true,
-        "hasEndpoint": true,
-        "modelOptions": [
-            {
-                "maxTokens": "128k",
-                "modalities": [
-                    "text"
-                ],
-                "model": "z-ai/glm-4.7-flash-free",
-                "enableTopP": false
-            }
-        ],
-        "modelPool": [
-            "stepfun/step-3.5-flash-free",
-            "z-ai/glm-4.7-flash-free",
-            "z-ai/glm-4.6v-flash",
-            "kuaishou/kat-coder-pro-v1",
-            "xiaomi/mimo-v2-flash-free"
-        ]
-    },
-    {
-        "type": "Chutes",
-        "model": "openai/gpt-oss-20b",
-        "endpoint": "https://llm.chutes.ai/v1/chat/completions",
-        "apiKey": "",
-        "enrollmentUrl": "https://chutes.ai/app/api",
-        "modelListUrl": "https://chutes.ai/app?type=llm&minPrice=0&maxPrice=0",
-        "notes": "Few open-source models available.",
-        "needVPN": true,
-        "hasApiKey": true,
-        "hasEndpoint": true,
-        "modelOptions": [],
-        "modelPool": [
-            "Alibaba-NLP/Tongyi-DeepResearch-30B-A3B",
-            "openai/gpt-oss-20b",
-            "meituan-longcat/LongCat-Flash-Chat-FP8",
-            "zai-org/GLM-4.5-Air",
-            "unsloth/gemma-3-4b-it"
-        ],
-        "disabled": true
-    },
-    {
-        "type": "iFlow",
-        "model": "deepseek-v3.2",
-        "endpoint": "https://apis.iflow.cn/v1/chat/completions",
-        "apiKey": "",
-        "enrollmentUrl": "https://platform.iflow.cn/docs",
-        "modelListUrl": "https://platform.iflow.cn/models",
-        "notes": "open-source models available. iFlow API end at 2026/4/17",
-        "needVPN": false,
-        "hasApiKey": true,
-        "hasEndpoint": true,
-        "modelOptions": [],
-        "modelPool": [
-            "qwen3-235b-a22b-instruct",
-            "qwen3-235b-a22b-thinking-2507",
-            "deepseek-v3.2",
-            "kimi-k2-0905",
-            "qwen3-max",
-            "qwen3-vl-plus",
-            "tstars2.0"
-        ],
-        "disabled": true
-    },
-    {
-        "type": "StreamLake",
-        "model": "ep-lt9stk-1761283739198127267",
-        "endpoint": "https://vanchin.streamlake.ai/api/gateway/v1/endpoints/chat/completions",
-        "apiKey": "",
-        "enrollmentUrl": "https://console.streamlake.ai/",
-        "modelListUrl": "https://console.streamlake.ai/wanqing",
-        "notes": "KAT-Coder model. Need login to get model name, only KAT-Coder-Air-V1 free",
-        "needVPN": false,
-        "hasApiKey": true,
-        "hasEndpoint": true,
-        "modelOptions": [
-            {
-                "maxTokens": "4096",
-                "modalities": [
-                    "text"
-                ],
-                "model": "ep-5gz7cw-1765187184458270589",
-                "enableTopP": false
-            }
-        ],
-        "modelPool": [
-            "ep-5gz7cw-1765187184458270589"
-        ],
-        "disabled": true
-    },
-    {
-        "type": "BaiLing",
-        "model": "Ling-1T",
-        "endpoint": "https://api.tbox.cn/api/llm/v1/chat/completions",
-        "apiKey": "",
-        "enrollmentUrl": "https://ling.tbox.cn/open",
-        "modelListUrl": "https://alipaytbox.yuque.com/sxs0ba/ant-ling_docs/model_overview",
-        "notes": "Free quota per day: 500K computing units",
-        "needVPN": false,
-        "hasApiKey": true,
-        "hasEndpoint": true,
-        "modelOptions": [],
-        "modelPool": [
-            "Ling-1T",
-            "Ring-1T",
-            "Ling-flash-2.0",
-            "Ling-mini-2.0",
-            "Ring-flash-2.0",
-            "Ring-mini-2.0"
-        ]
-    },
-    {
-        "type": "SiliconFlow",
-        "model": "THUDM/GLM-4.1V-9B-Thinking",
-        "endpoint": "https://api.siliconflow.cn/v1/chat/completions",
-        "apiKey": "",
-        "enrollmentUrl": "https://cloud.siliconflow.cn/me/account/ak",
-        "modelListUrl": "https://cloud.siliconflow.cn/me/models",
-        "needVPN": false,
-        "notes": "for text: 1,000 RPM 50,000 TPM. for image: 2 IPM ,400 IPD.",
-        "hasApiKey": true,
-        "hasEndpoint": true,
-        "modelOptions": [
-            {
-                "maxTokens": "16384",
-                "modalities": [
-                    "image"
-                ],
-                "model": "Kwai-Kolors/Kolors",
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "16384",
-                "modalities": [
-                    "asr"
-                ],
-                "model": "TeleAI/TeleSpeechASR",
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "16384",
-                "modalities": [
-                    "asr"
-                ],
-                "model": "FunAudioLLM/SenseVoiceSmall",
-                "enableTopP": true
-            }
-        ],
-        "modelPool": [
-            "THUDM/GLM-4.1V-9B-Thinking",
-            "Qwen/Qwen3-8B",
-            "tencent/Hunyuan-MT-7B",
-            "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
-            "THUDM/GLM-Z1-9B-0414",
-            "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
-            "Qwen/Qwen2.5-7B-Instruct",
-            "Qwen/Qwen2.5-Coder-7B-Instruct",
-            "THUDM/GLM-4-9B-0414",
-            "internlm/internlm2_5-7b-chat",
-            "THUDM/glm-4-9b-chat",
-            "Qwen/Qwen2-7B-Instruct",
-            "Kwai-Kolors/Kolors",
-            "TeleAI/TeleSpeechASR",
-            "FunAudioLLM/SenseVoiceSmall"
-        ]
-    },
-    {
-        "type": "OpenRouter",
-        "model": "meta-llama/llama-4-maverick:free",
-        "endpoint": "https://openrouter.ai/api/v1/chat/completions",
-        "apiKey": "",
-        "modelListUrl": "https://openrouter.ai/models?max_price=0",
-        "needVPN": true,
-        "enrollmentUrl": "https://openrouter.ai/settings/keys",
-        "notes": "",
-        "hasApiKey": true,
-        "hasEndpoint": true,
-        "modelOptions": [
-            {
-                "maxTokens": "1900000",
-                "modalities": [
-                    "text"
-                ],
-                "model": "x-ai/grok-4-fast:free",
-                "quality": 2,
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "1900000",
-                "modalities": [
-                    "text"
-                ],
-                "model": "x-ai/grok-4.1-fast:free",
-                "quality": 3,
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "1900000",
-                "modalities": [
-                    "text"
-                ],
-                "model": "x-ai/grok-4.1-fast",
-                "quality": 3,
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "128k",
-                "modalities": [
-                    "text"
-                ],
-                "model": "meituan/longcat-flash-chat:free",
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "128k",
-                "modalities": [
-                    "text"
-                ],
-                "model": "alibaba/tongyi-deepresearch-30b-a3b:free",
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "128k",
-                "modalities": [
-                    "text"
-                ],
-                "model": "meta-llama/llama-4-maverick:free",
-                "enableTopP": true
-            }
-        ],
-        "modelPool": [
-            "qwen/qwen3.6-plus-preview:free",
-            "openrouter/hunter-alpha",
-            "openrouter/healer-alpha",
-            "nvidia/nemotron-3-super-120b-a12b:free",
-            "minimax/minimax-m2.5:free",
-            "stepfun/step-3.5-flash:free",
-            "arcee-ai/trinity-large-preview:free",
-            "x-ai/grok-4.1-fast",
-            "mistralai/devstral-2512:free",
-            "sourceful/riverflow-v2-max-preview",
-            "sourceful/riverflow-v2-standard-preview",
-            "sourceful/riverflow-v2-fast-preview",
-            "nex-agi/deepseek-v3.1-nex-n1:free",
-            "amazon/nova-2-lite-v1:free",
-            "arcee-ai/trinity-mini:free",
-            "tngtech/tng-r1t-chimera:free",
-            "allenai/olmo-3-32b-think:free",
-            "kwaipilot/kat-coder-pro:free",
-            "nvidia/nemotron-nano-12b-v2-vl:free",
-            "alibaba/tongyi-deepresearch-30b-a3b:free",
-            "nvidia/nemotron-nano-9b-v2:free",
-            "openai/gpt-oss-120b:free",
-            "openai/gpt-oss-20b:free",
-            "z-ai/glm-4.5-air:free",
-            "qwen/qwen3-coder:free",
-            "moonshotai/kimi-k2:free",
-            "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
-            "google/gemma-3n-e2b-it:free",
-            "tngtech/deepseek-r1t2-chimera:free",
-            "google/gemma-3n-e4b-it:free",
-            "qwen/qwen3-4b:free",
-            "qwen/qwen3-235b-a22b:free",
-            "tngtech/deepseek-r1t-chimera:free",
-            "mistralai/mistral-small-3.1-24b-instruct:free",
-            "google/gemma-3-4b-it:free",
-            "google/gemma-3-12b-it:free",
-            "google/gemma-3-27b-it:free",
-            "google/gemini-2.0-flash-exp:free",
-            "meta-llama/llama-3.3-70b-instruct:free",
-            "meta-llama/llama-3.2-3b-instruct:free",
-            "nousresearch/hermes-3-llama-3.1-405b:free",
-            "mistralai/mistral-7b-instruct:free"
-        ]
-    },
-    {
-        "type": "Gemini",
-        "model": "gemini-2.0-flash-exp-image-generation",
-        "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent",
-        "apiKey": "",
-        "enrollmentUrl": "https://ai.google.dev/gemini-api/docs/quickstart",
-        "modelListUrl": "https://console.cloud.google.com/apis/api/generativelanguage.googleapis.com/quotas?pageState=(%22allQuotasTable%22:(%22p%22:0,%22f%22:%22%255B%257B_22k_22_3A_22%25E7%25BB%25B4%25E5%25BA%25A6%25EF%25BC%2588%25E4%25BE%258B%25E5%25A6%2582%25E4%25BD%258D%25E7%25BD%25AE%25EF%25BC%2589_22_2C_22t_22_3A10_2C_22v_22_3A_22_5C_22model_5C_22_22_2C_22i_22_3A_22displayDimensions_22%257D_2C%257B_22k_22_3A_22%25E5%2590%258D%25E7%25A7%25B0_22_2C_22t_22_3A10_2C_22v_22_3A_22_5C_22free_5C_22_22_2C_22i_22_3A_22displayName_22%257D_2C%257B_22k_22_3A_22%25E7%25BB%25B4%25E5%25BA%25A6%25EF%25BC%2588%25E4%25BE%258B%25E5%25A6%2582%25E4%25BD%258D%25E7%25BD%25AE%25EF%25BC%2589_22_2C_22t_22_3A10_2C_22v_22_3A_22_5C_22gemini_5C_22_22_2C_22i_22_3A_22displayDimensions_22%257D_2C%257B_22k_22_3A_22%25E5%2580%25BC_22_2C_22t_22_3A2_2C_22v_22_3A_22%257B_5C_22v_5C_22_3A_5C_220_5C_22_2C_5C_22o_5C_22_3A_5C_22%253E_5C_22%257D_22_2C_22i_22_3A_22effectiveLimit_22%257D%255D%22,%22s%22:%5B(%22i%22:%22displayDimensions%22,%22s%22:%220%22),(%22i%22:%22effectiveLimit%22,%22s%22:%220%22),(%22i%22:%22currentPercent%22,%22s%22:%221%22),(%22i%22:%22sevenDayPeakPercent%22,%22s%22:%220%22),(%22i%22:%22currentUsage%22,%22s%22:%221%22),(%22i%22:%22sevenDayPeakUsage%22,%22s%22:%220%22),(%22i%22:%22serviceTitle%22,%22s%22:%220%22),(%22i%22:%22displayName%22,%22s%22:%220%22)%5D,%22c%22:%5B%22type%22,%22metricName%22,%22limitName%22,%22monitoredResource%22%5D))",
-        "note": "https://console.cloud.google.com/apis/api/generativelanguage.googleapis.com/quotas?pageState=(%22allQuotasTable%22:(%22p%22:0,%22f%22:%22%255B%257B_22k_22_3A_22%25E7%25BB%25B4%25E5%25BA%25A6%25EF%25BC%2588%25E4%25BE%258B%25E5%25A6%2582%25E4%25BD%258D%25E7%25BD%25AE%25EF%25BC%2589_22_2C_22t_22_3A10_2C_22v_22_3A_22_5C_22model_5C_22_22_2C_22i_22_3A_22displayDimensions_22%257D_2C%257B_22k_22_3A_22%25E5%2590%258D%25E7%25A7%25B0_22_2C_22t_22_3A10_2C_22v_22_3A_22_5C_22free_5C_22_22_2C_22i_22_3A_22displayName_22%257D_2C%257B_22k_22_3A_22%25E7%25BB%25B4%25E5%25BA%25A6%25EF%25BC%2588%25E4%25BE%258B%25E5%25A6%2582%25E4%25BD%258D%25E7%25BD%25AE%25EF%25BC%2589_22_2C_22t_22_3A10_2C_22v_22_3A_22_5C_22gemini_5C_22_22_2C_22i_22_3A_22displayDimensions_22%257D_2C%257B_22k_22_3A_22%25E5%2580%25BC_22_2C_22t_22_3A2_2C_22v_22_3A_22%257B_5C_22v_5C_22_3A_5C_220_5C_22_2C_5C_22o_5C_22_3A_5C_22%253E_5C_22%257D_22_2C_22i_22_3A_22effectiveLimit_22%257D%255D%22,%22s%22:%5B(%22i%22:%22displayDimensions%22,%22s%22:%220%22),(%22i%22:%22effectiveLimit%22,%22s%22:%220%22),(%22i%22:%22currentPercent%22,%22s%22:%221%22),(%22i%22:%22sevenDayPeakPercent%22,%22s%22:%220%22),(%22i%22:%22currentUsage%22,%22s%22:%221%22),(%22i%22:%22sevenDayPeakUsage%22,%22s%22:%220%22),(%22i%22:%22serviceTitle%22,%22s%22:%220%22),(%22i%22:%22displayName%22,%22s%22:%220%22)%5D,%22c%22:%5B%22type%22,%22metricName%22,%22limitName%22,%22monitoredResource%22%5D))",
-        "hasApiKey": true,
-        "hasEndpoint": true,
-        "modelOptions": [
-            {
-                "maxTokens": "65k",
-                "modalities": [
-                    "text",
-                    "vision"
-                ],
-                "model": "gemini-2.5-pro",
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "64k",
-                "modalities": [
-                    "text",
-                    "vision"
-                ],
-                "model": "gemini-2.5-flash",
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "32k",
-                "modalities": [
-                    "text",
-                    "vision"
-                ],
-                "model": "gemini-2.0-flash",
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "8k",
-                "modalities": [
-                    "text"
-                ],
-                "model": "gemini-2.0-flash-lite",
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "32k",
-                "modalities": [
-                    "text",
-                    "vision",
-                    "image"
-                ],
-                "model": "gemini-2.0-flash-preview-image-generation",
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "128k",
-                "modalities": [
-                    "text"
-                ],
-                "model": "gemma-3n-e4b-it",
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "128k",
-                "modalities": [
-                    "text"
-                ],
-                "model": "gemma-3-27b-it",
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "128k",
-                "modalities": [
-                    "text",
-                    "audio-input"
-                ],
-                "model": "gemma-4-e4b-it",
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "128k",
-                "modalities": [
-                    "text",
-                    "audio-input"
-                ],
-                "model": "gemini-3-flash-preview",
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "128k",
-                "modalities": [
-                    "text",
-                    "audio-input"
-                ],
-                "model": "gemini-3.1-flash-lite-preview",
-                "enableTopP": true
-            }
-        ],
-        "modelPool": [
-            "gemini-3.1-pro",
-            "gemini-2.5-pro-1p-freebie",
-            "gemini-3-flash-preview",
-            "gemini-3.1-flash-lite-preview",
-            "gemini-2.5",
-            "gemini-2.5-pro",
-            "gemini-2.5-flash",
-            "gemini-2.5-flash-exp",
-            "gemini-2.5-flash-lite-preview-06-17",
-            "gemini-2.5-flash-live",
-            "gemini-2.5-pro-1p-freebie",
-            "gemini-2.0-flash",
-            "gemini-2.0-flash-lite",
-            "gemini-2.0-flash-preview-image-generation",
-            "gemma-3n-e4b-it",
-            "gemma-3-27b-it",
-            "gemma-4-31b-it",
-            "gemma-4-26b-a4b-it"
-        ]
-    },
-    {
-        "type": "Grok",
-        "model": "grok-2-latest",
-        "endpoint": "https://api.x.ai/v1/chat/completions",
-        "apiKey": "",
-        "enrollmentUrl": null,
-        "hasApiKey": true,
-        "hasEndpoint": true,
-        "modelOptions": [],
-        "modelPool": [
-            "grok-3-mini",
-            "grok-3-mini-fast",
-            "grok-2-latest",
-            "grok-3",
-            "grok-3-fast",
-            "grok-2-image"
-        ]
-    },
-    {
-        "type": "Cohere",
-        "model": "command-r-plus",
-        "endpoint": "https://api.cohere.com/v2/chat",
-        "apiKey": "",
-        "enrollmentUrl": "https://dashboard.cohere.com/api-keys",
-        "modelListUrl": "https://docs.cohere.com/v2/docs/models",
-        "hasApiKey": true,
-        "hasEndpoint": true,
-        "modelOptions": [],
-        "modelPool": [
-            "c4ai-aya-expanse-32b",
-            "c4ai-aya-vision-32b",
-            "command-a-03-2025",
-            "command-a-reasoning-08-2025",
-            "command-a-translate-08-2025",
-            "command-a-vision-07-2025",
-            "command-r-08-2024",
-            "command-r-plus-08-2024",
-            "command-r7b-12-2024",
-            "command-r7b-arabic-02-2025",
-            "tiny-aya-earth",
-            "tiny-aya-fire",
-            "tiny-aya-global",
-            "tiny-aya-water"
-        ]
-    },
-    {
-        "type": "Pollinations",
-        "model": "openai",
-        "endpoint": "https://text.pollinations.ai/",
-        "apiKey": "",
-        "modelListUrl": "https://text.pollinations.ai/models",
-        "needVPN": false,
-        "enrollmentUrl": "https://enter.pollinations.ai/",
-        "hasApiKey": true,
-        "hasEndpoint": true,
-        "modelOptions": [
-            {
-                "maxTokens": "65k",
-                "modalities": [
-                    "tts"
-                ],
-                "model": "openai-audio",
-                "enableTopP": true
-            }
-        ],
-        "modelPool": [
-            "deepseek",
-            "deepseek-reasoning",
-            "gemini",
-            "gemini-search",
-            "mistral",
-            "nova-fast",
-            "openai",
-            "openai-audio",
-            "openai-fast",
-            "openai-large",
-            "openai-reasoning",
-            "qwen-coder",
-            "roblox-rp",
-            "bidara",
-            "chickytutor",
-            "evil",
-            "midijourney",
-            "rtist",
-            "unity"
-        ]
-    },
-    {
-        "type": "Mistral",
-        "model": "mistral-large-latest",
-        "endpoint": "https://api.mistral.ai/v1/chat/completions",
-        "apiKey": "",
-        "enrollmentUrl": null,
-        "hasApiKey": true,
-        "hasEndpoint": true,
-        "modelOptions": [],
-        "modelPool": [
-            "magistral-medium-latest",
-            "magistral-small-latest",
-            "mistral-medium-latest",
-            "mistral-large-latest",
-            "pixtral-large-latest",
-            "ministral-3b-latest",
-            "ministral-8b-latest",
-            "open-mistral-nemo",
-            "mistral-small-latest",
-            "devstral-small-latest",
-            "mistral-saba-latest"
-        ]
-    },
-    {
-        "type": "BigModel",
-        "model": "glm-4-flashx",
-        "endpoint": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
-        "apiKey": "",
-        "modelListUrl": "https://open.bigmodel.cn/console/modelcenter/square",
-        "needVPN": false,
-        "notes": "",
-        "enrollmentUrl": null,
-        "hasApiKey": true,
-        "hasEndpoint": true,
-        "modelOptions": [
-            {
-                "maxTokens": "128k",
-                "modalities": [
-                    "image"
-                ],
-                "model": "CogView-3-Flash",
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "128k",
-                "modalities": [
-                    "video"
-                ],
-                "model": "CogVideoX-Flash",
-                "enableTopP": true
-            }
-        ],
-        "modelPool": [
-            "glm-4-flashx",
-            "glm-4-flash",
-            "glm-4-flash-250414",
-            "GLM-4.5-Flash",
-            "CogView-3-Flash",
-            "GLM-Z1-Flash",
-            "CogVideoX-Flash"
-        ]
-    },
-    {
-        "type": "ModelScope",
-        "model": "Qwen/Qwen3-235B-A22B-Thinking-2507",
-        "endpoint": "https://api-inference.modelscope.cn/v1/chat/completions",
-        "apiKey": "",
-        "modelListUrl": "https://modelscope.cn/models?filter=inference_type&page=1&tabKey=task",
-        "enrollmentUrl": "https://modelscope.cn/home",
-        "hasApiKey": true,
-        "hasEndpoint": true,
-        "modelOptions": [
-            {
-                "maxTokens": "32768",
-                "modalities": [
-                    "text"
-                ],
-                "model": "Kwai-Keye/Keye-VL-671B-A37B",
-                "enableTopP": true,
-                "quality": 2
-            },
-            {
-                "maxTokens": "32768",
-                "modalities": [
-                    "text"
-                ],
-                "model": "ZhipuAI/GLM-5",
-                "enableTopP": false,
-                "quality": 3
-            },
-            {
-                "maxTokens": "32768",
-                "modalities": [
-                    "text"
-                ],
-                "model": "ZhipuAI/GLM-4.7",
-                "enableTopP": false,
-                "quality": 2
-            },
-            {
-                "maxTokens": "32768",
-                "modalities": [
-                    "text"
-                ],
-                "model": "Qwen/Qwen3-Next-80B-A3B-Instruct",
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "128k",
-                "modalities": [
-                    "text"
-                ],
-                "model": "Qwen/Qwen3-235B-A22B-Thinking-2507",
-                "quality": 2,
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "128k",
-                "modalities": [
-                    "text"
-                ],
-                "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
-                "quality": 2,
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "32k",
-                "modalities": [
-                    "text"
-                ],
-                "model": "moonshotai/Kimi-K2-Instruct",
-                "quality": 2,
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "80k",
-                "modalities": [
-                    "text"
-                ],
-                "model": "MiniMax/MiniMax-M1-80k",
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "32k",
-                "modalities": [
-                    "text"
-                ],
-                "model": "PaddlePaddle/ERNIE-4.5-21B-A3B-PT",
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "32k",
-                "modalities": [
-                    "text"
-                ],
-                "model": "mistralai/Mistral-Small-24B-Base-2501",
-                "enableTopP": true
-            }
-        ],
-        "modelPool": [
-            "MiniMax/MiniMax-M2.5",
-            "Qwen/Qwen3.5-397B-A17B",
-            "meituan-longcat/LongCat-Flash-Lite",
-            "XiaomiMiMo/MiMo-V2-Flash",
-            "ZhipuAI/GLM-5",
-            "ZhipuAI/GLM-4.7",
-            "ZhipuAI/GLM-4.6V",
-            "deepseek-ai/DeepSeek-V3.2-Exp",
-            "Kwai-Keye/Keye-VL-671B-A37B",
-            "MiniMax/MiniMax-M2",
-            "Qwen/Qwen3-VL-8B-Instruct",
-            "Qwen/Qwen3-Next-80B-A3B-Instruct",
-            "Qwen/Qwen3-235B-A22B-Thinking-2507",
-            "Qwen/Qwen3-235B-A22B-Instruct-2507",
-            "moonshotai/Kimi-K2-Instruct",
-            "MiniMax/MiniMax-M1-80k",
-            "PaddlePaddle/ERNIE-4.5-21B-A3B-PT",
-            "mistralai/Mistral-Small-24B-Base-2501"
-        ]
-    },
-    {
-        "type": "Cerebras",
-        "model": "gpt-oss-120b",
-        "endpoint": "https://api.cerebras.ai/v1/chat/completions",
-        "apiKey": "",
-        "enrollmentUrl": "https://www.cerebras.ai/",
-        "modelListUrl": "https://inference-docs.cerebras.ai/models/overview",
-        "needVPN": true,
-        "hasApiKey": true,
-        "hasEndpoint": true,
-        "modelOptions": [],
-        "modelPool": [
-            "llama3.1-8b",
-            "gpt-oss-120b",
-            "qwen-3-235b-a22b-instruct-2507",
-            "zai-glm-4.7"
-        ]
-    },
-    {
-        "type": "Github",
-        "model": "xai/grok-3",
-        "endpoint": "https://models.github.ai/inference/chat/completions",
-        "enrollmentUrl": "https://docs.github.com/en/github-models/quickstart",
-        "modelListUrl": "https://github.com/marketplace/models",
-        "apiKey": "",
-        "hasApiKey": true,
-        "hasEndpoint": true,
-        "modelOptions": [
-            {
-                "maxTokens": "32k",
-                "modalities": [
-                    "text"
-                ],
-                "model": "xai/grok-3",
-                "quality": 2,
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "32k",
-                "modalities": [
-                    "audio-input"
-                ],
-                "model": "openai/o1",
-                "quality": 2,
-                "enableTopP": true
-            }
-        ],
-        "modelPool": [
-            "openai/gpt-4.1",
-            "openai/o1",
-            "xai/grok-3",
-            "microsoft/Phi-4-reasoning",
-            "ai21-labs/AI21-Jamba-1.5-Large",
-            "mistral-ai/Codestral-2501",
-            "xai/grok-3-mini",
-            "meta/Llama-3.2-90B-Vision-Instruct"
-        ]
-    },
-    {
-        "type": "Moonshot",
-        "model": "kimi-k2-thinking",
-        "endpoint": "https://api.moonshot.ai/v1/chat/completions",
-        "apiKey": "",
-        "enrollmentUrl": "https://platform.moonshot.cn/docs/overview",
-        "modelListUrl": "https://platform.moonshot.cn/docs/pricing/chat#%E4%BA%A7%E5%93%81%E5%AE%9A%E4%BB%B7",
-        "notes": "15 yuan on registration, for free use: 3 RPM; 500,000 TPM; 1,500,000 TPD",
-        "hasApiKey": true,
-        "hasEndpoint": true,
-        "modelOptions": [
-            {
-                "maxTokens": "32k",
-                "modalities": [
-                    "text"
-                ],
-                "model": "kimi-k2-thinking",
-                "quality": 2,
-                "enableTopP": true
-            }
-        ],
-        "modelPool": [
-            "kimi-k2.5",
-            "kimi-k2-thinking",
-            "kimi-k2-turbo-preview",
-            "kimi-k2-0905-preview"
-        ]
-    },
-    {
-        "type": "MiniMax",
-        "model": "MiniMax-M2",
-        "endpoint": "https://api.minimaxi.com/v1/chat/completions",
-        "apiKey": "",
-        "enrollmentUrl": "https://platform.minimaxi.com/user-center/basic-information/interface-key",
-        "modelListUrl": "https://platform.minimaxi.com/docs/guides/pricing-paygo",
-        "notes": "no free models",
-        "hasApiKey": true,
-        "hasEndpoint": true,
-        "modelOptions": [],
-        "modelPool": [
-            "MiniMax-M2",
-            "MiniMax-M2-Stable"
-        ],
-        "disabled": true
-    },
-    {
-        "type": "Nvidia",
-        "model": "meta/llama-4-maverick-17b-128e-instruct",
-        "endpoint": "https://integrate.api.nvidia.com/v1/chat/completions",
-        "apiKey": "",
-        "enrollmentUrl": "https://build.nvidia.com/settings/api-keys",
-        "modelListUrl": "https://docs.api.nvidia.com/nim/reference/llm-apis",
-        "hasApiKey": false,
-        "hasEndpoint": true,
-        "modelOptions": [],
-        "modelPool": [
-            "---llm/apis",
-            "abacusai/dracarys-llama-3.1-70b-instruct",
-            "abacusai/dracarys-llama-3.1-70b-instruct-infer",
-            "ai21labs/jamba-1-5-mini-instruct",
-            "ai21labs/jamba-1-5-mini-instruct-infer",
-            "aisingapore/sea-lion-7b-instruct",
-            "create_chat_completion_v1_chat_completions_post",
-            "baichuan/inc-baichuan2-13b-chat",
-            "baichuan/inc-baichuan2-13b-chat-infer",
-            "bigcode/starcoder2-7b",
-            "bigcode/starcoder2-7b-infer",
-            "bytedance/seed-oss-36b-instruct",
-            "bytedance/seed-oss-36b-instruct-infer",
-            "deepseek/ai-deepseek-r1-distill-llama-8b",
-            "deepseek/ai-deepseek-r1-distill-llama-8b-infer",
-            "deepseek/ai-deepseek-r1-distill-qwen-7b",
-            "deepseek/ai-deepseek-r1-distill-qwen-7b-infer",
-            "deepseek/ai-deepseek-r1-distill-qwen-14b",
-            "deepseek/ai-deepseek-r1-distill-qwen-14b-infer",
-            "deepseek/ai-deepseek-r1-distill-qwen-32b",
-            "deepseek/ai-deepseek-r1-distill-qwen-32b-infer",
-            "deepseek/ai-deepseek-v3.1",
-            "deepseek/ai-deepseek-v3.1-infer",
-            "deepseek/ai-deepseek-v3.1-terminus",
-            "deepseek/ai-deepseek-v3.1-terminus-infer",
-            "deepseek/ai-deepseek-v3_2",
-            "deepseek/ai-deepseek-v3_2-infer",
-            "google/codegemma-1-1-7b-1",
-            "create_chat_completion_v1_chat_completions_post/1",
-            "google/codegemma-7b",
-            "google/codegemma-7b-infer",
-            "google/gemma7b",
-            "google/gemma7b-infer",
-            "google/gemma-2-2b-it",
-            "google/gemma-2-2b-it-infer",
-            "google/gemma-2-9b-it",
-            "google/gemma-2-9b-it-infer",
-            "google/gemma-2-27b-it",
-            "google/gemma-2-27b-it-infer",
-            "google/gemma-3-1b-it",
-            "google/gemma-3-1b-it-infer",
-            "google/shieldgemma-9b",
-            "google/shieldgemma-9b-infer",
-            "gotocompany/gemma-2-9b-cpt-sahabatai-instruct",
-            "gotocompany/gemma-2-9b-cpt-sahabatai-instruct-infer",
-            "ibm/granite-3.3-8b-instruct",
-            "ibm/granite-3.3-8b-instruct-infer",
-            "ibm/granite-guardian-3.0-8b",
-            "ibm/granite-guardian-3.0-8b-infer",
-            "igenius/colosseum_355b_instruct_16k-infer",
-            "igenius/italia_10b_instruct_16k",
-            "igenius/italia_10b_instruct_16k-infer",
-            "institute/of-science-tokyo-llama-3-1-swallow-70b-instruct-v01",
-            "institute/of-science-tokyo-llama-3-1-swallow-70b-instruct-v01-infer",
-            "institute/of-science-tokyo-llama-3-1-swallow-8b-instruct-v01",
-            "institute/of-science-tokyo-llama-3-1-swallow-8b-instruct-v01-infer",
-            "marin/marin-8b-instruct",
-            "marin/marin-8b-instruct-infer",
-            "mediatek/breeze-7b-instruct",
-            "create_chat_completion_v1_chat_completions_post/3",
-            "meta/codellama-70b",
-            "meta/codellama-70b-infer",
-            "meta/llama2-70b",
-            "meta/llama2-70b-infer",
-            "meta/llama3-8b",
-            "meta/llama3-8b-infer",
-            "meta/llama3-70b",
-            "meta/llama3-70b-infer",
-            "meta/llama-3.1-8b",
-            "meta/llama-3.1-8b-infer",
-            "meta/llama-3.1-70b",
-            "meta/llama-3.1-70b-infer",
-            "meta/llama-3.1-405b",
-            "meta/llama-3.1-405b-infer",
-            "meta/llama-3_2-1b-instruct",
-            "meta/llama-3_2-1b-instruct-infer",
-            "meta/llama-3_2-3b-instruct",
-            "meta/llama-3_2-3b-instruct-infer",
-            "meta/llama-3.3-70b-instruct",
-            "meta/llama-3.3-70b-instruct-infer",
-            "microsoft/phi-3-medium-128k",
-            "microsoft/phi-3-medium-128k-infer",
-            "microsoft/phi-3-medium-4k",
-            "microsoft/phi-3-medium-4k-infer",
-            "microsoft/phi-3-mini",
-            "microsoft/phi-3-mini-infer",
-            "microsoft/phi-3-mini-4k",
-            "microsoft/phi-3-mini-4k-infer",
-            "microsoft/phi-3-small-128k",
-            "microsoft/phi-3-small-128k-infer",
-            "microsoft/phi-3-small-8k",
-            "microsoft/phi-3-small-8k-infer",
-            "microsoft/phi-3_5-mini",
-            "microsoft/phi-3_5-mini-infer",
-            "microsoft/phi-4-mini-instruct",
-            "microsoft/phi-4-mini-instruct-infer",
-            "microsoft/phi-4-mini-flash-reasoning",
-            "microsoft/phi-4-mini-flash-reasoning-infer",
-            "minimaxai/minimax-m2.5",
-            "minimaxai/minimax-m2.5-infer",
-            "minimaxai/minimax-m2.1",
-            "minimaxai/minimax-m2.1-infer",
-            "mistralai/codestral-22b-instruct-v01",
-            "mistralai/codestral-22b-instruct-v01-infer",
-            "mistralai/devstral-2-123b-instruct-2512",
-            "mistralai/devstral-2-123b-instruct-2512-infer",
-            "mistralai/magistral-small-2506",
-            "mistralai/magistral-small-2506-infer",
-            "mistralai/mamba-codestral-7b-v01",
-            "mistralai/mamba-codestral-7b-v01-infer",
-            "mistralai/mathstral-7b-v01",
-            "mistralai/mathstral-7b-v01-infer",
-            "mistralai/mistral-large-2-instruct",
-            "mistralai/mistral-large-2-instruct-infer",
-            "mistralai/mistral-7b-instruct",
-            "mistralai/mistral-7b-instruct-infer",
-            "mistralai/mistral-7b-instruct-v03",
-            "mistralai/mistral-7b-instruct-v03-infer",
-            "mistralai/mistral-large",
-            "mistralai/mistral-large-infer",
-            "mistralai/mistral-nemotron",
-            "mistralai/mistral-nemotron-infer",
-            "mistralai/mistral-small-24b-instruct",
-            "mistralai/mistral-small-24b-instruct-infer",
-            "mistralai/mixtral-8x7b-instruct",
-            "mistralai/mixtral-8x7b-instruct-infer",
-            "mistralai/mixtral-8x22b-instruct-infer",
-            "moonshotai/kimi-k2-instruct",
-            "moonshotai/kimi-k2-instruct-infer",
-            "moonshotai/kimi-k2-instruct-0905",
-            "moonshotai/kimi-k2-instruct-0905-infer",
-            "moonshotai/kimi-k2-thinking",
-            "moonshotai/kimi-k2-thinking-infer",
-            "nvidia/gliner-pii",
-            "nvidia/gliner-pii-infer",
-            "nvidia/llama3-chatqa-1-5-8b",
-            "nvidia/llama3-chatqa-1-5-8b-infer",
-            "nvidia/llama-3.1-nemoguard-8b-content-safety",
-            "nvidia/llama-3.1-nemoguard-8b-content-safety-infer",
-            "nvidia/llama-3.1-nemoguard-8b-topic-control",
-            "nvidia/llama-3.1-nemoguard-8b-topic-control-infer",
-            "nvidia/llama-3.1-nemotron-nano-8b-v1",
-            "nvidia/llama-3.1-nemotron-nano-8b-v1-infer",
-            "nvidia/llama-3.1-nemotron-70b-reward",
-            "nvidia/llama-3.1-nemotron-70b-reward-infer",
-            "nvidia/llama-3.1-nemotron-nano-4b-v1_1",
-            "nvidia/llama-3.1-nemotron-nano-4b-v1_1-infer",
-            "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
-            "nvidia/llama-3.1-nemotron-safety-guard-8b-v3-infer",
-            "nvidia/llama-3.1-nemotron-safety-guard-multilingual-8b-v1",
-            "nvidia/llama-3.1-nemotron-safety-guard-multilingual-8b-v1-infer",
-            "nvidia/llama-3.1-nemotron-ultra-253b-v1",
-            "nvidia/llama-3.1-nemotron-ultra-253b-v1-infer",
-            "nvidia/llama-3_2-nemoretriever-1b-vlm-embed-v1",
-            "nvidia/llama-3_2-nemoretriever-1b-vlm-embed-v1-infer",
-            "nvidia/llama-3.3-nemotron-super-49b-v1",
-            "nvidia/llama-3.3-nemotron-super-49b-v1-infer",
-            "nvidia/llama-3.3-nemotron-super-49b-v1_5",
-            "nvidia/llama-3.3-nemotron-super-49b-v1_5-infer",
-            "nvidia/mistral-nemo-minitron-8b-base",
-            "nvidia/mistral-nemo-minitron-8b-base-infer",
-            "nvidia/nemoguard-jailbreak-detect",
-            "nvidia/nemoguard-jailbreak-detect-infer",
-            "nvidia/nemotron-3-nano-30b-a3b",
-            "nvidia/nemotron-3-nano-30b-a3b-infer",
-            "nvidia/nemotron-3-super-120b-a12b",
-            "nvidia/nemotron-3-super-120b-a12b-infer",
-            "nvidia/nemotron-4-mini-hindi-4b-instruct",
-            "nvidia/nemotron-4-mini-hindi-4b-instruct-infer",
-            "nvidia/nemotron-content-safety-reasoning-4b",
-            "nvidia/nemotron-content-safety-reasoning-4b-infer",
-            "nvidia/nemotron-mini-4b-instruct",
-            "nvidia/nemotron-mini-4b-instruct-infer",
-            "nvidia/nvidia-nemotron-nano-9b-v2",
-            "nvidia/nvidia-nemotron-nano-9b-v2-infer",
-            "nvidia/riva-translate-4b-instruct-v1_1",
-            "nvidia/riva-translate-4b-instruct-v1_1-infer",
-            "nvidia/usdcode",
-            "nvidia/usdcode-infer",
-            "nvidia/usdsearch",
-            "nvidia/usdsearch-infer",
-            "openai/gpt-oss-20b",
-            "openai/gpt-oss-20b-infer",
-            "openai/gpt-oss-120b",
-            "openai/gpt-oss-120b-infer",
-            "opengpt/x-teuken-7b-instruct-commercial-v04",
-            "opengpt/x-teuken-7b-instruct-commercial-v04-infer",
-            "qwen/qwen2-7b-instruct",
-            "qwen/qwen2-7b-instruct-infer",
-            "qwen/qwen2.5-7b-instruct",
-            "qwen/qwen2.5-7b-instruct-infer",
-            "qwen/qwen2.5-coder-7b-instruct",
-            "qwen/qwen2.5-coder-7b-instruct-infer",
-            "qwen/qwen2.5-coder-32b-instruct",
-            "qwen/qwen2.5-coder-32b-instruct-infer",
-            "qwen/qwen3.5-122b-a10b",
-            "qwen/qwen3.5-122b-a10b-infer",
-            "qwen/qwen3.5-122b-a10b-statuspolling",
-            "qwen/qwen3-coder-480b-a35b-instruct",
-            "qwen/qwen3-coder-480b-a35b-instruct-infer",
-            "qwen/qwen3-next-80b-a3b-instruct",
-            "qwen/qwen3-next-80b-a3b-instruct-infer",
-            "qwen/qwen3-next-80b-a3b-thinking",
-            "qwen/qwen3-next-80b-a3b-thinking-infer",
-            "qwen/qwq-32b",
-            "qwen/qwq-32b-infer",
-            "rakuten/rakutenai-7b-chat",
-            "rakuten/rakutenai-7b-chat-infer",
-            "rakuten/rakutenai-7b-instruct",
-            "rakuten/rakutenai-7b-instruct-infer",
-            "seallms/seallm-7b-v25",
-            "seallms/seallm-7b-v25-infer",
-            "sarvamai/sarvam-m",
-            "sarvamai/sarvam-m-infer",
-            "speakleash/bielik-11b-v2_6-instruct",
-            "speakleash/bielik-11b-v2_6-instruct-infer",
-            "stepfun/ai-step-3-5-flash",
-            "stepfun/ai-step-3-5-flash-infer",
-            "stockmark/stockmark-2-100b-instruct",
-            "create_chat_completion_v1_chat_completions_post/4",
-            "tokyotech/llm-llama-3-swallow-70b-instruct-v01",
-            "tokyotech/llm-llama-3-swallow-70b-instruct-v01-infer",
-            "thudm/chatglm3-6b",
-            "thudm/chatglm3-6b-infer",
-            "tiiuae/falcon3-7b-instruct",
-            "tiiuae/falcon3-7b-instruct-infer",
-            "upstage/solar-10_7b-instruct",
-            "upstage/solar-10_7b-instruct-infer",
-            "utter/project-eurollm-9b-instruct",
-            "utter/project-eurollm-9b-instruct-infer",
-            "yentinglin/llama-3-taiwan-70b-instruct",
-            "yentinglin/llama-3-taiwan-70b-instruct-infer",
-            "z/ai-glm4-7",
-            "z/ai-glm4-7-infer",
-            "z/ai-glm5",
-            "z/ai-glm5-infer",
-            "---retrieval/apis",
-            "baai/bge-m3",
-            "baai/bge-m3-invoke",
-            "baai/bge-m3-statuspolling",
-            "nvidia/embed-qa-4",
-            "nvidia/embedding-2b-infer",
-            "nvidia/llama-3_2-nemoretriever-300m-embed-v1",
-            "nvidia/llama-3_2-nemoretriever-300m-embed-v1-infer",
-            "nvidia/llama-3_2-nemoretriever-300m-embed-v2",
-            "nvidia/llama-3_2-nemoretriever-300m-embed-v2-infer",
-            "nvidia/llama-3_2-nemoretriever-500m-rerank-v2",
-            "nvidia/llama-3_2-nemoretriever-500m-rerank-v2-infer",
-            "nvidia/llama-3_2-nv-embedqa-1b-v1",
-            "nvidia/llama-3_2-nv-embedqa-1b-v1-infer",
-            "nvidia/llama-3_2-nv-embedqa-1b-v2",
-            "nvidia/llama-3_2-nv-embedqa-1b-v2-infer",
-            "nvidia/llama-3_2-nv-rerankqa-1b-v1",
-            "nvidia/llama-3_2-nv-rerankqa-1b-v1-infer",
-            "nvidia/llama-3_2-nv-rerankqa-1b-v2",
-            "nvidia/llama-3_2-nv-rerankqa-1b-v2-infer",
-            "nvidia/llama-nemotron-embed-1b-v2",
-            "nvidia/llama-nemotron-embed-1b-v2-infer",
-            "nvidia/llama-nemotron-embed-vl-1b-v2",
-            "nvidia/llama-nemotron-embed-vl-1b-v2-infer",
-            "nvidia/llama-nemotron-rerank-1b-v2",
-            "nvidia/llama-nemotron-rerank-1b-v2-infer",
-            "nvidia/nvclip",
-            "nvidia/nvclip-infer",
-            "nvidia/nv-embed-v1",
-            "nvidia/nv-embed-v1-infer",
-            "nvidia/nv-embedcode-7b-v1",
-            "nvidia/nv-embedcode-7b-v1-infer",
-            "nvidia/nv-embedqa-e5-v5",
-            "nvidia/nv-embedqa-e5-v5-infer",
-            "nvidia/nv-rerankqa-mistral-4b-v3",
-            "nvidia/nv-rerankqa-mistral-4b-v3-infer",
-            "nvidia/rerank-qa-mistral-4b",
-            "nvidia/reranking-4b-infer",
-            "snowflake/arctic-embed-l",
-            "snowflake/arctic-embed-l-invoke",
-            "snowflake/arctic-embed-l-statuspolling",
-            "---- visual/models-apis",
-            "black/forest-labs-flux_1-dev",
-            "black/forest-labs-flux_1-dev-infer",
-            "black/forest-labs-flux_1-schnell",
-            "black/forest-labs-flux_1-schnell-infer",
-            "black/forest-labs-flux_2-klein-4b",
-            "black/forest-labs-flux_2-klein-4b-infer",
-            "google/gemma-3-27b-it",
-            "google/gemma-3-27b-it-infer",
-            "google/gemma-3-27b-it-statuspolling",
-            "google/gemma-3n-e2b-it",
-            "google/gemma-3n-e2b-it-infer",
-            "google/gemma-3n-e2b-it-statuspolling",
-            "google/gemma-3n-e4b-it",
-            "google/gemma-3n-e4b-it-infer",
-            "google/gemma-3n-e4b-it-statuspolling",
-            "hive/ai-generated-image-detection",
-            "hive/ai-generated-image-detection-infer",
-            "hive/deepfake-image-detection",
-            "hive/deepfake-image-detection-infer",
-            "meta/llama-guard-4-12b",
-            "meta/llama-guard-4-12b-infer",
-            "meta/llama-guard-4-12b-statuspolling",
-            "microsoft/phi-4-multimodal-instruct",
-            "microsoft/phi-4-multimodal-instruct-infer",
-            "microsoft/phi-4-multimodal-instruct-statuspolling",
-            "microsoft/trellis",
-            "microsoft/trellis-infer",
-            "mistralai/mistral-large-3-675b-instruct-2512",
-            "mistralai/mistral-large-3-675b-instruct-2512-infer",
-            "mistralai/mistral-large-3-675b-instruct-2512-statuspolling",
-            "mistralai/ministral-14b-instruct-2512",
-            "mistralai/ministral-14b-instruct-2512-infer",
-            "mistralai/ministral-14b-instruct-2512-statuspolling",
-            "mistralai/mistral-medium-3-instruct",
-            "mistralai/mistral-medium-3-instruct-infer",
-            "mistralai/mistral-medium-3-instruct-statuspolling",
-            "mistralai/mistral-small-3.1-24b-instruct-2503",
-            "mistralai/mistral-small-3.1-24b-instruct-2503-infer",
-            "mistralai/mistral-small-3.1-24b-instruct-2503-statuspolling",
-            "nvidia/bevformer",
-            "nvidia/bevformer-infer",
-            "nvidia/cosmos-1_0-diffusion-7b",
-            "nvidia/nemoretriever-parse",
-            "nvidia/nemoretriever-parse-infer",
-            "nvidia/nemoretriever-parse-statuspolling",
-            "nvidia/nemotron-nano-12b-v2-vl",
-            "nvidia/nemotron-nano-12b-v2-vl-infer",
-            "nvidia/nemotron-nano-v2-12b-vl-statuspolling",
-            "nvidia/nemotron-parse",
-            "nvidia/nemotron-parse-infer",
-            "nvidia/nemotron-parse-statuspolling",
-            "nvidia/nv-dinov2",
-            "nvidia/nv-dinov2-infer",
-            "nvidia/nv-dinov2-statuspolling",
-            "nvidia/nv-grounding-dino",
-            "nvidia/nv-grounding-dino-infer",
-            "nvidia/nv-grounding-dino-statuspolling",
-            "nvidia/ocdrnet",
-            "nvidia/ocdrnet-infer",
-            "nvidia/ocdrnet-statuspolling",
-            "nvidia/retail-object-detection",
-            "nvidia/retail-object-detection-infer",
-            "nvidia/retail-object-detection-statuspolling",
-            "nvidia/sparsedrive",
-            "nvidia/sparsedrive-infer",
-            "nvidia/streampetr",
-            "nvidia/streampetr-infer",
-            "nvidia/vila",
-            "nvidia/vila-infer",
-            "nvidia/vila-statuspolling",
-            "nvidia/visual-changenet",
-            "nvidia/visual-changenet-infer",
-            "nvidia/visual-changenet-statuspolling",
-            "stabilityai/stable-diffusion-3-medium",
-            "stabilityai/stable-diffusion-3-medium-infer",
-            "stabilityai/stable-diffusion-xl",
-            "stabilityai/stable-diffusion-xl-infer",
-            "stabilityai/stable-video-diffusion",
-            "stabilityai/stable-video-diffusion-infer",
-            "---- multimodal/apis",
-            "black/forest-labs-flux_1-kontext-dev",
-            "black/forest-labs-flux_1-kontext-dev-infer",
-            "google/paligemma",
-            "google/paligemma-infer",
-            "google/paligemma-statuspolling",
-            "meta/llama-3_2-11b-vision-instruct",
-            "meta/llama-3_2-11b-vision-instruct-infer",
-            "meta/llama-3_2-11b-vision-instruct-statuspolling",
-            "meta/llama-3_2-90b-vision-instruct",
-            "meta/llama-3_2-90b-vision-instruct-infer",
-            "meta/llama-3_2-90b-vision-instruct-statuspolling",
-            "meta/llama-4-maverick-17b-128e-instruct",
-            "meta/llama-4-maverick-17b-128e-instruct-infer",
-            "meta/llama-4-maverick-17b-128e-instruct-statuspolling",
-            "meta/llama-4-scout-17b-16e-instruct",
-            "meta/llama-4-scout-17b-16e-instruct-infer",
-            "meta/llama-4-scout-17b-16e-instruct-statuspolling",
-            "microsoft/phi-3_5-vision-instruct",
-            "microsoft/phi-3_5-vision-instruct-infer",
-            "microsoft/phi-3_5-vision-instruct-statuspolling",
-            "moonshotai/kimi-k2.5",
-            "moonshotai/kimi-k2.5-infer",
-            "moonshotai/kimi-k2.5-statuspolling",
-            "nvidia/llama-3.1-nemotron-nano-vl-8b-v1",
-            "nvidia/llama-3.1-nemotron-nano-vl-8b-v1-infer",
-            "nvidia/llama-3.1-nemotron-nano-vl-8b-v1-statuspolling",
-            "qwen/qwen3.5-397b-a17b",
-            "qwen/qwen3.5-397b-a17b-infer",
-            "qwen/qwen3.5-397b-a17b-statuspolling"
-        ]
-    },
-    {
-        "type": "Chatjimmy",
-        "model": "llama3.1-8B",
-        "endpoint": "https://chatjimmy.ai/api/chat",
-        "apiKey": "",
-        "enrollmentUrl": "https://chatjimmy.ai",
-        "notes": "Free, no API key needed",
-        "needVPN": false,
-        "hasApiKey": false,
-        "hasEndpoint": true,
-        "modelOptions": [],
-        "modelPool": [
-            "llama3.1-8B"
-        ]
-    },
-    {
-        "type": "Sambanova",
-        "model": "DeepSeek-R1-0528",
-        "endpoint": "https://api.sambanova.ai/v1/chat/completions",
-        "apiKey": "",
-        "enrollmentUrl": "https://docs.sambanova.ai/docs/en/get-started/api-keys-urls",
-        "notes": "RPM 20 - 40, RPD 40, TPD 200000 for free use",
-        "needVPN": false,
-        "hasApiKey": false,
-        "hasEndpoint": true,
-        "modelOptions": [],
-        "modelPool": [
-            "DeepSeek-R1-0528",
-            "DeepSeek-V3-0324",
-            "DeepSeek-V3.1",
-            "DeepSeek-R1-Distill-Llama-70B",
-            "Meta-Llama-3.3-70B-Instruct",
-            "Meta-Llama-3.1-8B-Instruct",
-            "Llama-4-Maverick-17B-128E-Instruct",
-            "gpt-oss-120b",
-            "Whisper-Large-v3",
-            "Qwen3-235B-A22B-Instruct-2507",
-            "Qwen3-32B",
-            "Llama-3.3-Swallow-70B-Instruct-v0.4",
-            "E5-Mistral-7B-Instruct"
-        ]
-    },
-    {
-        "type": "Groq",
-        "model": "openai/gpt-oss-120b",
-        "endpoint": "https://api.groq.com/openai/v1/chat/completions",
-        "apiKey": "",
-        "enrollmentUrl": "https://console.groq.com/keys",
-        "modelListUrl": "https://console.groq.com/docs/models",
-        "hasApiKey": true,
-        "hasEndpoint": true,
-        "modelListAbleToFetch": true,
-        "modelOptions": [],
-        "modelPool": [
-            "llama-3.1-8b-instant",
-            "llama-3.3-70b-versatile",
-            "openai/gpt-oss-120b",
-            "canopylabs/orpheus-v1-english",
-            "moonshotai/kimi-k2-instruct-0905"
-        ]
-    },
-    {
-        "type": "AIMLAPI",
-        "model": "gemma-3-12b-it",
-        "endpoint": "https://api.aimlapi.com/v1/chat/completions",
-        "enrollmentUrl": "https://aimlapi.com/app/keys",
-        "apiKey": "",
-        "modelPool": [
-            "gemma-3n-e4b-it",
-            "gemma-3-12b-it",
-            "baidu/ernie-4-5-0-3b"
-        ]
-    },
-    {
-        "type": "Longcat",
-        "model": "LongCat-Flash-Chat",
-        "endpoint": "https://api.longcat.chat/openai/v1/chat/completions",
-        "enrollmentUrl": "https://longcat.chat/platform/api_keys",
-        "apiKey": "",
-        "modelOptions": [
-            {
-                "maxTokens": "32k",
-                "modalities": [
-                    "text"
-                ],
-                "model": "LongCat-Flash-Omni-2603",
-                "quality": 2,
-                "enableTopP": true
-            }
-        ],
-        "modelPool": [
-            "LongCat-Flash-Chat",
-            "LongCat-Flash-Thinking",
-            "LongCat-Flash-Thinking-2601",
-            "LongCat-Flash-Lite",
-            "LongCat-Flash-Omni-2603"
-        ]
-    },
-    {
-        "type": "Riffle Sidekick",
-        "endpoint": "https://riffle-sidekick.gsx123.workers.dev/api/v1/chat/completions",
-        "model": "meta/llama-4-maverick-17b-128e-instruct",
-        "apiKey": "",
-        "hasApiKey": true,
-        "enrollmentUrl": "https://riffle-sidekick.gsx123.workers.dev",
-        "modelPool": [
-            "openai/gpt-oss-120b",
-            "zai-org/glm-4.7-flash",
-            "meta/llama-4-scout-17b-16e-instruct",
-            "meta/llama-3.3-70b-instruct-fp8-fast",
-            "fblgit/una-cybertron-7b-v2-bf16",
-            "qwen/qwen3-30b-a3b-fp8"
-        ]
-    },
-    {
-        "type": "Ollama Cloud",
-        "model": "gpt-oss:20b-cloud",
-        "endpoint": "https://ollama.com/api/chat",
-        "apiKey": "",
-        "enrollmentUrl": "https://ollama.com/settings/keys",
-        "modelListUrl": "https://ollama.com/search",
-        "hasApiKey": true,
-        "hasEndpoint": true,
-        "modelListAbleToFetch": true,
-        "modelOptions": [],
-        "modelPool": [
-            "minimax-m2.7:cloud",
-            "qwen3.5:122b-cloud",
-            "qwen3-coder-next:cloud",
-            "qwen3-vl:235b-cloud",
-            "devstral-small-2:24b-cloud",
-            "ministral-3:14b-cloud",
-            "minimax-m2.5:cloud",
-            "glm-5:cloud",
-            "qwen3-next:80b-cloud",
-            "rnj-1:8b-cloud",
-            "nemotron-3-super:120b-cloud",
-            "kimi-k2.5:cloud",
-            "nemotron-3-nano:30b-cloud",
-            "devstral-2:123b-cloud",
-            "gemini-3-flash-preview:cloud",
-            "cogito-2.1:671b-cloud",
-            "glm-4.7:cloud",
-            "minimax-m2:cloud",
-            "glm-4.6:cloud",
-            "deepseek-v3.2:cloud",
-            "minimax-m2.1:cloud",
-            "kimi-k2-thinking:cloud",
-            "mistral-large-3:cloud",
-            "gpt-oss:120b-cloud",
-            "qwen3-coder:480b-cloud",
-            "deepseek-v3.1:671b-cloud",
-            "kimi-k2:cloud",
-            "gemma3:27b-cloud"
-        ]
-    },
-    {
-        "type": "LM-Studio",
-        "model": "google/gemma-3-4b",
-        "endpoint": "http://localhost:1234/v1/chat/completions",
-        "apiKey": "",
-        "enrollmentUrl": null,
-        "hasApiKey": false,
-        "hasEndpoint": true,
-        "modelListAbleToFetch": true,
-        "modelOptions": [],
-        "modelPool": [
-            "qwen3-vl-8b-instruct-abliterated-v2.0",
-            "google/gemma-3-4b",
-            "zai-org/glm-4.6v-flash",
-            "qwen/qwen3-30b-a3b-2507"
-        ]
-    },
-    {
-        "type": "AtomGit",
-        "model": "zai-org/GLM-5",
-        "endpoint": "https://api-ai.gitcode.com/v1/chat/completions",
-        "apiKey": "",
-        "enrollmentUrl": "https://docs.atomgit.com/docs/apis/post-api-v-5-chat-completions/",
-        "modelListUrl": "https://ai.atomgit.com/models?exp=ONLINE",
-        "needVPN": false,
-        "hasApiKey": true,
-        "hasEndpoint": true,
-        "modelOptions": [],
-        "modelPool": [
-            "zai/glm-5",
-            "zai-org/GLM-5",
-            "Qwen/Qwen3.5-397B-A17B",
-            "Qwen/Qwen3.5-122B-A10B",
-            "Qwen3.5-397B-A17B-w8a8-mtp",
-            "deepseek-ai/DeepSeek-R1",
-            "Qwen/Qwen3-Coder-480B-A35B-Instruct"
-        ]
-    },
-    {
-        "type": "Volcengine",
-        "model": "doubao-1.5-vision-pro-250328",
-        "endpoint": "https://ark.cn-beijing.volces.com/api/v3/chat/completions",
-        "apiKey": "",
-        "enrollmentUrl": "https://console.volcengine.com/ark/region:ark+cn-beijing/endpoint",
-        "modelListUrl": "https://console.volcengine.com/ark/region:ark+cn-beijing/model?groupType=ModelGroups&vendor=Bytedance&view=DEFAULT_VIEW",
-        "notes": "",
-        "needVPN": false,
-        "hasApiKey": true,
-        "hasEndpoint": true,
-        "modelOptions": [],
-        "modelPool": [
-            "doubao-seed-2-0-lite-260215",
-            "doubao-seed-2-0-mini-260215",
-            "doubao-seed-2-0-pro-260215",
-            "doubao-seed-1-8-251228",
-            "doubao-seed-1-6-251015",
-            "doubao-1-5-thinking-vision-pro-250428",
-            "doubao-1.5-vision-pro-250328"
-        ]
-    },
-    {
-        "type": "Vercel",
-        "model": "gpt-4o-mini",
-        "endpoint": "https://ai-gateway.vercel.sh/v1/chat/completions",
-        "apiKey": "",
-        "enrollmentUrl": "https://vercel.com/d?to=%2F%5Bteam%5D%2F%7E%2Fai-gateway%2Fapi-keys&title=AI+Gateway+API+Keys",
-        "modelListUrl": "https://vercel.com/d?to=%2F%5Bteam%5D%2F%7E%2Fai-gateway%2Fmodels&title=AI+Models",
-        "notes": "Monthly credit $5/month included",
-        "needVPN": true,
-        "hasApiKey": true,
-        "hasEndpoint": true,
-        "modelOptions": [
-            {
-                "maxTokens": "1048576",
-                "modalities": [
-                    "audio-input"
-                ],
-                "model": "google/gemini-3-flash",
-                "enableTopP": true
-            },
-            {
-                "maxTokens": "1048576",
-                "modalities": [
-                    "audio-input"
-                ],
-                "model": "anthropic/claude-opus-4.6",
-                "enableTopP": true
-            }
-        ],
-        "modelPool": [
-            "anthropic/claude-opus-4.6",
-            "google/gemini-3-flash",
-            "kwaipilot/kat-coder-pro-v1",
-            "anthropic/claude-sonnet-4.6",
-            "minimax/minimax-m2.5",
-            "zai/glm-5",
-            "google/gemini-2.5-flash-lite",
-            "anthropic/claude-haiku-4.5",
-            "moonshotai/kimi-k2.5",
-            "google/gemini-3.1-pro-preview",
-            "openai/gpt-5.4",
-            "anthropic/claude-3.7-sonnet",
-            "anthropic/claude-sonnet-4.5",
-            "google/gemini-2.5-flash",
-            "openai/gpt-5.2",
-            "google/gemini-3.1-flash-lite-preview",
-            "anthropic/claude-sonnet-4",
-            "anthropic/claude-opus-4.5",
-            "xai/grok-4.1-fast-non-reasoning",
-            "openai/gpt-5.1-instant"
-        ]
-    },
-    {
-        "type": "OpenCode",
-        "model": "opencode/big-pickle",
-        "endpoint": "https://opencode.ai/zen/v1/chat/completions",
-        "apiKey": "",
-        "enrollmentUrl": "https://opencode.ai/workspace/wrk_01KMEJ1FG1FJHBRGH2SRBGBYSM/keys",
-        "modelListUrl": "https://opencode.ai/docs/zen/",
-        "notes": "",
-        "needVPN": true,
-        "hasApiKey": true,
-        "hasEndpoint": true,
-        "modelOptions": [],
-        "modelPool": [
-            "big-pickle",
-            "mimo-v2-pro-free",
-            "mimo-v2-omni-free",
-            "nemotron-3-super-free",
-            "minimax-m2.5-free",
-            "qwen3.6-plus-free"
-        ]
-    }
-]
+{
+    "version": 1,
+    "providers": [
+        {
+            "type": "XiaoMi",
+            "model": "mimo-v2-flash",
+            "endpoint": "https://api.xiaomimimo.com/v1/chat/completions",
+            "apiKey": "",
+            "enrollmentUrl": "https://platform.xiaomimimo.com/#/docs/quick-start/first-api-call",
+            "modelListUrl": "https://platform.xiaomimimo.com/#/docs/pricing",
+            "notes": "150,000 tokens per day, 20 RPM",
+            "needVPN": false,
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelOptions": [],
+            "modelPool": [
+                "mimo-v2-flash"
+            ],
+            "disabled": true
+        },
+        {
+            "type": "NavyAI",
+            "model": "gpt-4.1-mini",
+            "endpoint": "https://api.navy/v1/chat/completions",
+            "apiKey": "",
+            "enrollmentUrl": "https://api.navy/docs/",
+            "modelListUrl": "https://api.navy/dashboard/#models",
+            "notes": "150,000 tokens per day, 20 RPM",
+            "needVPN": true,
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelOptions": [
+                {
+                    "maxTokens": "65536",
+                    "modalities": [
+                        "audio-input"
+                    ],
+                    "model": "gemini-2.5-pro",
+                    "enableTopP": true
+                },
+                {
+                    "maxTokens": "65536",
+                    "modalities": [
+                        "audio-input"
+                    ],
+                    "model": "gemini-2.5-flash",
+                    "enableTopP": true
+                }
+            ],
+            "modelPool": [
+                "gpt-5.2",
+                "gpt-4.1-mini",
+                "gemini-2.5-pro",
+                "gemini-2.5-flash",
+                "gemini-3.1-flash-lite-preview",
+                "gemini-3.1-flash-lite-preview-thinking",
+                "deepseek-v3.2",
+                "grok-3-mini",
+                "grok-4-fast-non-reasoning",
+                "grok-4.1-fast-non-reasoning",
+                "grok-4.1-fast-reasoning",
+                "grok-4.20-non-reasoning",
+                "grok-4.20-reasoning",
+                "grok-uncensored",
+                "kimi-k2-thinking",
+                "longcat-flash-chat",
+                "qwen3-235b-a22b-thinking-2507",
+                "minimax-m2",
+                "sonar-pro",
+                "pixtral-large-latest",
+                "mistral-saba-latest",
+                "codestral-latest",
+                "skyfall-36b-v2"
+            ]
+        },
+        {
+            "type": "ZenMux",
+            "model": "z-ai/glm-4.7-flash-free",
+            "endpoint": "https://zenmux.ai/api/v1/chat/completions",
+            "apiKey": "",
+            "enrollmentUrl": "https://docs.zenmux.ai/guide/quickstart.html",
+            "modelListUrl": "https://zenmux.ai/models?sort=newest&keyword=free",
+            "notes": "Have cutting-edge gemini text/image models for free use , with a small number of free requests",
+            "needVPN": true,
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelOptions": [
+                {
+                    "maxTokens": "128k",
+                    "modalities": [
+                        "text"
+                    ],
+                    "model": "z-ai/glm-4.7-flash-free",
+                    "enableTopP": false
+                }
+            ],
+            "modelPool": [
+                "stepfun/step-3.5-flash-free",
+                "z-ai/glm-4.7-flash-free",
+                "z-ai/glm-4.6v-flash",
+                "kuaishou/kat-coder-pro-v1",
+                "xiaomi/mimo-v2-flash-free"
+            ]
+        },
+        {
+            "type": "Chutes",
+            "model": "openai/gpt-oss-20b",
+            "endpoint": "https://llm.chutes.ai/v1/chat/completions",
+            "apiKey": "",
+            "enrollmentUrl": "https://chutes.ai/app/api",
+            "modelListUrl": "https://chutes.ai/app?type=llm&minPrice=0&maxPrice=0",
+            "notes": "Few open-source models available.",
+            "needVPN": true,
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelOptions": [],
+            "modelPool": [
+                "Alibaba-NLP/Tongyi-DeepResearch-30B-A3B",
+                "openai/gpt-oss-20b",
+                "meituan-longcat/LongCat-Flash-Chat-FP8",
+                "zai-org/GLM-4.5-Air",
+                "unsloth/gemma-3-4b-it"
+            ],
+            "disabled": true
+        },
+        {
+            "type": "iFlow",
+            "model": "deepseek-v3.2",
+            "endpoint": "https://apis.iflow.cn/v1/chat/completions",
+            "apiKey": "",
+            "enrollmentUrl": "https://platform.iflow.cn/docs",
+            "modelListUrl": "https://platform.iflow.cn/models",
+            "notes": "open-source models available. iFlow API end at 2026/4/17",
+            "needVPN": false,
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelOptions": [],
+            "modelPool": [
+                "qwen3-235b-a22b-instruct",
+                "qwen3-235b-a22b-thinking-2507",
+                "deepseek-v3.2",
+                "kimi-k2-0905",
+                "qwen3-max",
+                "qwen3-vl-plus",
+                "tstars2.0"
+            ],
+            "disabled": true
+        },
+        {
+            "type": "StreamLake",
+            "model": "ep-lt9stk-1761283739198127267",
+            "endpoint": "https://vanchin.streamlake.ai/api/gateway/v1/endpoints/chat/completions",
+            "apiKey": "",
+            "enrollmentUrl": "https://console.streamlake.ai/",
+            "modelListUrl": "https://console.streamlake.ai/wanqing",
+            "notes": "KAT-Coder model. Need login to get model name, only KAT-Coder-Air-V1 free",
+            "needVPN": false,
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelOptions": [
+                {
+                    "maxTokens": "4096",
+                    "modalities": [
+                        "text"
+                    ],
+                    "model": "ep-5gz7cw-1765187184458270589",
+                    "enableTopP": false
+                }
+            ],
+            "modelPool": [
+                "ep-5gz7cw-1765187184458270589"
+            ],
+            "disabled": true
+        },
+        {
+            "type": "BaiLing",
+            "model": "Ling-1T",
+            "endpoint": "https://api.tbox.cn/api/llm/v1/chat/completions",
+            "apiKey": "",
+            "enrollmentUrl": "https://ling.tbox.cn/open",
+            "modelListUrl": "https://alipaytbox.yuque.com/sxs0ba/ant-ling_docs/model_overview",
+            "notes": "Free quota per day: 500K computing units",
+            "needVPN": false,
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelOptions": [],
+            "modelPool": [
+                "Ling-1T",
+                "Ring-1T",
+                "Ling-flash-2.0",
+                "Ling-mini-2.0",
+                "Ring-flash-2.0",
+                "Ring-mini-2.0"
+            ]
+        },
+        {
+            "type": "SiliconFlow",
+            "model": "THUDM/GLM-4.1V-9B-Thinking",
+            "endpoint": "https://api.siliconflow.cn/v1/chat/completions",
+            "apiKey": "",
+            "enrollmentUrl": "https://cloud.siliconflow.cn/me/account/ak",
+            "modelListUrl": "https://cloud.siliconflow.cn/me/models",
+            "needVPN": false,
+            "notes": "for text: 1,000 RPM 50,000 TPM. for image: 2 IPM ,400 IPD.",
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelOptions": [
+                {
+                    "maxTokens": "16384",
+                    "modalities": [
+                        "image"
+                    ],
+                    "model": "Kwai-Kolors/Kolors",
+                    "enableTopP": true
+                },
+                {
+                    "maxTokens": "16384",
+                    "modalities": [
+                        "asr"
+                    ],
+                    "model": "TeleAI/TeleSpeechASR",
+                    "enableTopP": true
+                },
+                {
+                    "maxTokens": "16384",
+                    "modalities": [
+                        "asr"
+                    ],
+                    "model": "FunAudioLLM/SenseVoiceSmall",
+                    "enableTopP": true
+                }
+            ],
+            "modelPool": [
+                "THUDM/GLM-4.1V-9B-Thinking",
+                "Qwen/Qwen3-8B",
+                "tencent/Hunyuan-MT-7B",
+                "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+                "THUDM/GLM-Z1-9B-0414",
+                "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+                "Qwen/Qwen2.5-7B-Instruct",
+                "Qwen/Qwen2.5-Coder-7B-Instruct",
+                "THUDM/GLM-4-9B-0414",
+                "internlm/internlm2_5-7b-chat",
+                "THUDM/glm-4-9b-chat",
+                "Qwen/Qwen2-7B-Instruct",
+                "Kwai-Kolors/Kolors",
+                "TeleAI/TeleSpeechASR",
+                "FunAudioLLM/SenseVoiceSmall"
+            ]
+        },
+        {
+            "type": "OpenRouter",
+            "model": "meta-llama/llama-4-maverick:free",
+            "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+            "apiKey": "",
+            "modelListUrl": "https://openrouter.ai/models?max_price=0",
+            "needVPN": true,
+            "enrollmentUrl": "https://openrouter.ai/settings/keys",
+            "notes": "",
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelOptions": [
+                {
+                    "maxTokens": "1900000",
+                    "modalities": [
+                        "text"
+                    ],
+                    "model": "x-ai/grok-4-fast:free",
+                    "quality": 2,
+                    "enableTopP": true
+                },
+                {
+                    "maxTokens": "1900000",
+                    "modalities": [
+                        "text"
+                    ],
+                    "model": "x-ai/grok-4.1-fast:free",
+                    "quality": 3,
+                    "enableTopP": true
+                },
+                {
+                    "maxTokens": "1900000",
+                    "modalities": [
+                        "text"
+                    ],
+                    "model": "x-ai/grok-4.1-fast",
+                    "quality": 3,
+                    "enableTopP": true
+                },
+                {
+                    "maxTokens": "128k",
+                    "modalities": [
+                        "text"
+                    ],
+                    "model": "meituan/longcat-flash-chat:free",
+                    "enableTopP": true
+                },
+                {
+                    "maxTokens": "128k",
+                    "modalities": [
+                        "text"
+                    ],
+                    "model": "alibaba/tongyi-deepresearch-30b-a3b:free",
+                    "enableTopP": true
+                },
+                {
+                    "maxTokens": "128k",
+                    "modalities": [
+                        "text"
+                    ],
+                    "model": "meta-llama/llama-4-maverick:free",
+                    "enableTopP": true
+                }
+            ],
+            "modelPool": [
+                "qwen/qwen3.6-plus-preview:free",
+                "openrouter/hunter-alpha",
+                "openrouter/healer-alpha",
+                "nvidia/nemotron-3-super-120b-a12b:free",
+                "minimax/minimax-m2.5:free",
+                "stepfun/step-3.5-flash:free",
+                "arcee-ai/trinity-large-preview:free",
+                "x-ai/grok-4.1-fast",
+                "mistralai/devstral-2512:free",
+                "sourceful/riverflow-v2-max-preview",
+                "sourceful/riverflow-v2-standard-preview",
+                "sourceful/riverflow-v2-fast-preview",
+                "nex-agi/deepseek-v3.1-nex-n1:free",
+                "amazon/nova-2-lite-v1:free",
+                "arcee-ai/trinity-mini:free",
+                "tngtech/tng-r1t-chimera:free",
+                "allenai/olmo-3-32b-think:free",
+                "kwaipilot/kat-coder-pro:free",
+                "nvidia/nemotron-nano-12b-v2-vl:free",
+                "alibaba/tongyi-deepresearch-30b-a3b:free",
+                "nvidia/nemotron-nano-9b-v2:free",
+                "openai/gpt-oss-120b:free",
+                "openai/gpt-oss-20b:free",
+                "z-ai/glm-4.5-air:free",
+                "qwen/qwen3-coder:free",
+                "moonshotai/kimi-k2:free",
+                "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+                "google/gemma-3n-e2b-it:free",
+                "tngtech/deepseek-r1t2-chimera:free",
+                "google/gemma-3n-e4b-it:free",
+                "qwen/qwen3-4b:free",
+                "qwen/qwen3-235b-a22b:free",
+                "tngtech/deepseek-r1t-chimera:free",
+                "mistralai/mistral-small-3.1-24b-instruct:free",
+                "google/gemma-3-4b-it:free",
+                "google/gemma-3-12b-it:free",
+                "google/gemma-3-27b-it:free",
+                "google/gemini-2.0-flash-exp:free",
+                "meta-llama/llama-3.3-70b-instruct:free",
+                "meta-llama/llama-3.2-3b-instruct:free",
+                "nousresearch/hermes-3-llama-3.1-405b:free",
+                "mistralai/mistral-7b-instruct:free"
+            ]
+        },
+        {
+            "type": "Gemini",
+            "model": "gemini-2.0-flash-exp-image-generation",
+            "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent",
+            "apiKey": "",
+            "enrollmentUrl": "https://ai.google.dev/gemini-api/docs/quickstart",
+            "modelListUrl": "https://console.cloud.google.com/apis/api/generativelanguage.googleapis.com/quotas?pageState=(%22allQuotasTable%22:(%22p%22:0,%22f%22:%22%255B%257B_22k_22_3A_22%25E7%25BB%25B4%25E5%25BA%25A6%25EF%25BC%2588%25E4%25BE%258B%25E5%25A6%2582%25E4%25BD%258D%25E7%25BD%25AE%25EF%25BC%2589_22_2C_22t_22_3A10_2C_22v_22_3A_22_5C_22model_5C_22_22_2C_22i_22_3A_22displayDimensions_22%257D_2C%257B_22k_22_3A_22%25E5%2590%258D%25E7%25A7%25B0_22_2C_22t_22_3A10_2C_22v_22_3A_22_5C_22free_5C_22_22_2C_22i_22_3A_22displayName_22%257D_2C%257B_22k_22_3A_22%25E7%25BB%25B4%25E5%25BA%25A6%25EF%25BC%2588%25E4%25BE%258B%25E5%25A6%2582%25E4%25BD%258D%25E7%25BD%25AE%25EF%25BC%2589_22_2C_22t_22_3A10_2C_22v_22_3A_22_5C_22gemini_5C_22_22_2C_22i_22_3A_22displayDimensions_22%257D_2C%257B_22k_22_3A_22%25E5%2580%25BC_22_2C_22t_22_3A2_2C_22v_22_3A_22%257B_5C_22v_5C_22_3A_5C_220_5C_22_2C_5C_22o_5C_22_3A_5C_22%253E_5C_22%257D_22_2C_22i_22_3A_22effectiveLimit_22%257D%255D%22,%22s%22:%5B(%22i%22:%22displayDimensions%22,%22s%22:%220%22),(%22i%22:%22effectiveLimit%22,%22s%22:%220%22),(%22i%22:%22currentPercent%22,%22s%22:%221%22),(%22i%22:%22sevenDayPeakPercent%22,%22s%22:%220%22),(%22i%22:%22currentUsage%22,%22s%22:%221%22),(%22i%22:%22sevenDayPeakUsage%22,%22s%22:%220%22),(%22i%22:%22serviceTitle%22,%22s%22:%220%22),(%22i%22:%22displayName%22,%22s%22:%220%22)%5D,%22c%22:%5B%22type%22,%22metricName%22,%22limitName%22,%22monitoredResource%22%5D))",
+            "note": "https://console.cloud.google.com/apis/api/generativelanguage.googleapis.com/quotas?pageState=(%22allQuotasTable%22:(%22p%22:0,%22f%22:%22%255B%257B_22k_22_3A_22%25E7%25BB%25B4%25E5%25BA%25A6%25EF%25BC%2588%25E4%25BE%258B%25E5%25A6%2582%25E4%25BD%258D%25E7%25BD%25AE%25EF%25BC%2589_22_2C_22t_22_3A10_2C_22v_22_3A_22_5C_22model_5C_22_22_2C_22i_22_3A_22displayDimensions_22%257D_2C%257B_22k_22_3A_22%25E5%2590%258D%25E7%25A7%25B0_22_2C_22t_22_3A10_2C_22v_22_3A_22_5C_22free_5C_22_22_2C_22i_22_3A_22displayName_22%257D_2C%257B_22k_22_3A_22%25E7%25BB%25B4%25E5%25BA%25A6%25EF%25BC%2588%25E4%25BE%258B%25E5%25A6%2582%25E4%25BD%258D%25E7%25BD%25AE%25EF%25BC%2589_22_2C_22t_22_3A10_2C_22v_22_3A_22_5C_22gemini_5C_22_22_2C_22i_22_3A_22displayDimensions_22%257D_2C%257B_22k_22_3A_22%25E5%2580%25BC_22_2C_22t_22_3A2_2C_22v_22_3A_22%257B_5C_22v_5C_22_3A_5C_220_5C_22_2C_5C_22o_5C_22_3A_5C_22%253E_5C_22%257D_22_2C_22i_22_3A_22effectiveLimit_22%257D%255D%22,%22s%22:%5B(%22i%22:%22displayDimensions%22,%22s%22:%220%22),(%22i%22:%22effectiveLimit%22,%22s%22:%220%22),(%22i%22:%22currentPercent%22,%22s%22:%221%22),(%22i%22:%22sevenDayPeakPercent%22,%22s%22:%220%22),(%22i%22:%22currentUsage%22,%22s%22:%221%22),(%22i%22:%22sevenDayPeakUsage%22,%22s%22:%220%22),(%22i%22:%22serviceTitle%22,%22s%22:%220%22),(%22i%22:%22displayName%22,%22s%22:%220%22)%5D,%22c%22:%5B%22type%22,%22metricName%22,%22limitName%22,%22monitoredResource%22%5D))",
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelOptions": [
+                {
+                    "maxTokens": "65k",
+                    "modalities": [
+                        "text",
+                        "vision"
+                    ],
+                    "model": "gemini-2.5-pro",
+                    "enableTopP": true
+                },
+                {
+                    "maxTokens": "64k",
+                    "modalities": [
+                        "text",
+                        "vision"
+                    ],
+                    "model": "gemini-2.5-flash",
+                    "enableTopP": true
+                },
+                {
+                    "maxTokens": "32k",
+                    "modalities": [
+                        "text",
+                        "vision"
+                    ],
+                    "model": "gemini-2.0-flash",
+                    "enableTopP": true
+                },
+                {
+                    "maxTokens": "8k",
+                    "modalities": [
+                        "text"
+                    ],
+                    "model": "gemini-2.0-flash-lite",
+                    "enableTopP": true
+                },
+                {
+                    "maxTokens": "32k",
+                    "modalities": [
+                        "text",
+                        "vision",
+                        "image"
+                    ],
+                    "model": "gemini-2.0-flash-preview-image-generation",
+                    "enableTopP": true
+                },
+                {
+                    "maxTokens": "128k",
+                    "modalities": [
+                        "text"
+                    ],
+                    "model": "gemma-3n-e4b-it",
+                    "enableTopP": true
+                },
+                {
+                    "maxTokens": "128k",
+                    "modalities": [
+                        "text"
+                    ],
+                    "model": "gemma-3-27b-it",
+                    "enableTopP": true
+                },
+                {
+                    "maxTokens": "128k",
+                    "modalities": [
+                        "text",
+                        "audio-input"
+                    ],
+                    "model": "gemma-4-e4b-it",
+                    "enableTopP": true
+                },
+                {
+                    "maxTokens": "128k",
+                    "modalities": [
+                        "text",
+                        "audio-input"
+                    ],
+                    "model": "gemini-3-flash-preview",
+                    "enableTopP": true
+                },
+                {
+                    "maxTokens": "128k",
+                    "modalities": [
+                        "text",
+                        "audio-input"
+                    ],
+                    "model": "gemini-3.1-flash-lite-preview",
+                    "enableTopP": true
+                }
+            ],
+            "modelPool": [
+                "gemini-3.1-pro",
+                "gemini-2.5-pro-1p-freebie",
+                "gemini-3-flash-preview",
+                "gemini-3.1-flash-lite-preview",
+                "gemini-2.5",
+                "gemini-2.5-pro",
+                "gemini-2.5-flash",
+                "gemini-2.5-flash-exp",
+                "gemini-2.5-flash-lite-preview-06-17",
+                "gemini-2.5-flash-live",
+                "gemini-2.5-pro-1p-freebie",
+                "gemini-2.0-flash",
+                "gemini-2.0-flash-lite",
+                "gemini-2.0-flash-preview-image-generation",
+                "gemma-3n-e4b-it",
+                "gemma-3-27b-it",
+                "gemma-4-31b-it",
+                "gemma-4-26b-a4b-it"
+            ]
+        },
+        {
+            "type": "Grok",
+            "model": "grok-2-latest",
+            "endpoint": "https://api.x.ai/v1/chat/completions",
+            "apiKey": "",
+            "enrollmentUrl": null,
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelOptions": [],
+            "modelPool": [
+                "grok-3-mini",
+                "grok-3-mini-fast",
+                "grok-2-latest",
+                "grok-3",
+                "grok-3-fast",
+                "grok-2-image"
+            ]
+        },
+        {
+            "type": "Cohere",
+            "model": "command-r-plus",
+            "endpoint": "https://api.cohere.com/v2/chat",
+            "apiKey": "",
+            "enrollmentUrl": "https://dashboard.cohere.com/api-keys",
+            "modelListUrl": "https://docs.cohere.com/v2/docs/models",
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelOptions": [],
+            "modelPool": [
+                "c4ai-aya-expanse-32b",
+                "c4ai-aya-vision-32b",
+                "command-a-03-2025",
+                "command-a-reasoning-08-2025",
+                "command-a-translate-08-2025",
+                "command-a-vision-07-2025",
+                "command-r-08-2024",
+                "command-r-plus-08-2024",
+                "command-r7b-12-2024",
+                "command-r7b-arabic-02-2025",
+                "tiny-aya-earth",
+                "tiny-aya-fire",
+                "tiny-aya-global",
+                "tiny-aya-water"
+            ]
+        },
+        {
+            "type": "Pollinations",
+            "model": "openai",
+            "endpoint": "https://text.pollinations.ai/",
+            "apiKey": "",
+            "modelListUrl": "https://text.pollinations.ai/models",
+            "needVPN": false,
+            "enrollmentUrl": "https://enter.pollinations.ai/",
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelOptions": [
+                {
+                    "maxTokens": "65k",
+                    "modalities": [
+                        "tts"
+                    ],
+                    "model": "openai-audio",
+                    "enableTopP": true
+                }
+            ],
+            "modelPool": [
+                "deepseek",
+                "deepseek-reasoning",
+                "gemini",
+                "gemini-search",
+                "mistral",
+                "nova-fast",
+                "openai",
+                "openai-audio",
+                "openai-fast",
+                "openai-large",
+                "openai-reasoning",
+                "qwen-coder",
+                "roblox-rp",
+                "bidara",
+                "chickytutor",
+                "evil",
+                "midijourney",
+                "rtist",
+                "unity"
+            ]
+        },
+        {
+            "type": "Mistral",
+            "model": "mistral-large-latest",
+            "endpoint": "https://api.mistral.ai/v1/chat/completions",
+            "apiKey": "",
+            "enrollmentUrl": null,
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelOptions": [],
+            "modelPool": [
+                "magistral-medium-latest",
+                "magistral-small-latest",
+                "mistral-medium-latest",
+                "mistral-large-latest",
+                "pixtral-large-latest",
+                "ministral-3b-latest",
+                "ministral-8b-latest",
+                "open-mistral-nemo",
+                "mistral-small-latest",
+                "devstral-small-latest",
+                "mistral-saba-latest"
+            ]
+        },
+        {
+            "type": "BigModel",
+            "model": "glm-4-flashx",
+            "endpoint": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+            "apiKey": "",
+            "modelListUrl": "https://open.bigmodel.cn/console/modelcenter/square",
+            "needVPN": false,
+            "notes": "",
+            "enrollmentUrl": null,
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelOptions": [
+                {
+                    "maxTokens": "128k",
+                    "modalities": [
+                        "image"
+                    ],
+                    "model": "CogView-3-Flash",
+                    "enableTopP": true
+                },
+                {
+                    "maxTokens": "128k",
+                    "modalities": [
+                        "video"
+                    ],
+                    "model": "CogVideoX-Flash",
+                    "enableTopP": true
+                }
+            ],
+            "modelPool": [
+                "glm-4-flashx",
+                "glm-4-flash",
+                "glm-4-flash-250414",
+                "GLM-4.5-Flash",
+                "CogView-3-Flash",
+                "GLM-Z1-Flash",
+                "CogVideoX-Flash"
+            ]
+        },
+        {
+            "type": "ModelScope",
+            "model": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+            "endpoint": "https://api-inference.modelscope.cn/v1/chat/completions",
+            "apiKey": "",
+            "modelListUrl": "https://modelscope.cn/models?filter=inference_type&page=1&tabKey=task",
+            "enrollmentUrl": "https://modelscope.cn/home",
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelOptions": [
+                {
+                    "maxTokens": "32768",
+                    "modalities": [
+                        "text"
+                    ],
+                    "model": "Kwai-Keye/Keye-VL-671B-A37B",
+                    "enableTopP": true,
+                    "quality": 2
+                },
+                {
+                    "maxTokens": "32768",
+                    "modalities": [
+                        "text"
+                    ],
+                    "model": "ZhipuAI/GLM-5",
+                    "enableTopP": false,
+                    "quality": 3
+                },
+                {
+                    "maxTokens": "32768",
+                    "modalities": [
+                        "text"
+                    ],
+                    "model": "ZhipuAI/GLM-4.7",
+                    "enableTopP": false,
+                    "quality": 2
+                },
+                {
+                    "maxTokens": "32768",
+                    "modalities": [
+                        "text"
+                    ],
+                    "model": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+                    "enableTopP": true
+                },
+                {
+                    "maxTokens": "128k",
+                    "modalities": [
+                        "text"
+                    ],
+                    "model": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+                    "quality": 2,
+                    "enableTopP": true
+                },
+                {
+                    "maxTokens": "128k",
+                    "modalities": [
+                        "text"
+                    ],
+                    "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+                    "quality": 2,
+                    "enableTopP": true
+                },
+                {
+                    "maxTokens": "32k",
+                    "modalities": [
+                        "text"
+                    ],
+                    "model": "moonshotai/Kimi-K2-Instruct",
+                    "quality": 2,
+                    "enableTopP": true
+                },
+                {
+                    "maxTokens": "80k",
+                    "modalities": [
+                        "text"
+                    ],
+                    "model": "MiniMax/MiniMax-M1-80k",
+                    "enableTopP": true
+                },
+                {
+                    "maxTokens": "32k",
+                    "modalities": [
+                        "text"
+                    ],
+                    "model": "PaddlePaddle/ERNIE-4.5-21B-A3B-PT",
+                    "enableTopP": true
+                },
+                {
+                    "maxTokens": "32k",
+                    "modalities": [
+                        "text"
+                    ],
+                    "model": "mistralai/Mistral-Small-24B-Base-2501",
+                    "enableTopP": true
+                }
+            ],
+            "modelPool": [
+                "MiniMax/MiniMax-M2.5",
+                "Qwen/Qwen3.5-397B-A17B",
+                "meituan-longcat/LongCat-Flash-Lite",
+                "XiaomiMiMo/MiMo-V2-Flash",
+                "ZhipuAI/GLM-5",
+                "ZhipuAI/GLM-4.7",
+                "ZhipuAI/GLM-4.6V",
+                "deepseek-ai/DeepSeek-V3.2-Exp",
+                "Kwai-Keye/Keye-VL-671B-A37B",
+                "MiniMax/MiniMax-M2",
+                "Qwen/Qwen3-VL-8B-Instruct",
+                "Qwen/Qwen3-Next-80B-A3B-Instruct",
+                "Qwen/Qwen3-235B-A22B-Thinking-2507",
+                "Qwen/Qwen3-235B-A22B-Instruct-2507",
+                "moonshotai/Kimi-K2-Instruct",
+                "MiniMax/MiniMax-M1-80k",
+                "PaddlePaddle/ERNIE-4.5-21B-A3B-PT",
+                "mistralai/Mistral-Small-24B-Base-2501"
+            ]
+        },
+        {
+            "type": "Cerebras",
+            "model": "gpt-oss-120b",
+            "endpoint": "https://api.cerebras.ai/v1/chat/completions",
+            "apiKey": "",
+            "enrollmentUrl": "https://www.cerebras.ai/",
+            "modelListUrl": "https://inference-docs.cerebras.ai/models/overview",
+            "needVPN": true,
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelOptions": [],
+            "modelPool": [
+                "llama3.1-8b",
+                "gpt-oss-120b",
+                "qwen-3-235b-a22b-instruct-2507",
+                "zai-glm-4.7"
+            ]
+        },
+        {
+            "type": "Github",
+            "model": "xai/grok-3",
+            "endpoint": "https://models.github.ai/inference/chat/completions",
+            "enrollmentUrl": "https://docs.github.com/en/github-models/quickstart",
+            "modelListUrl": "https://github.com/marketplace/models",
+            "apiKey": "",
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelOptions": [
+                {
+                    "maxTokens": "32k",
+                    "modalities": [
+                        "text"
+                    ],
+                    "model": "xai/grok-3",
+                    "quality": 2,
+                    "enableTopP": true
+                },
+                {
+                    "maxTokens": "32k",
+                    "modalities": [
+                        "audio-input"
+                    ],
+                    "model": "openai/o1",
+                    "quality": 2,
+                    "enableTopP": true
+                }
+            ],
+            "modelPool": [
+                "openai/gpt-4.1",
+                "openai/o1",
+                "xai/grok-3",
+                "microsoft/Phi-4-reasoning",
+                "ai21-labs/AI21-Jamba-1.5-Large",
+                "mistral-ai/Codestral-2501",
+                "xai/grok-3-mini",
+                "meta/Llama-3.2-90B-Vision-Instruct"
+            ]
+        },
+        {
+            "type": "Moonshot",
+            "model": "kimi-k2-thinking",
+            "endpoint": "https://api.moonshot.ai/v1/chat/completions",
+            "apiKey": "",
+            "enrollmentUrl": "https://platform.moonshot.cn/docs/overview",
+            "modelListUrl": "https://platform.moonshot.cn/docs/pricing/chat#%E4%BA%A7%E5%93%81%E5%AE%9A%E4%BB%B7",
+            "notes": "15 yuan on registration, for free use: 3 RPM; 500,000 TPM; 1,500,000 TPD",
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelOptions": [
+                {
+                    "maxTokens": "32k",
+                    "modalities": [
+                        "text"
+                    ],
+                    "model": "kimi-k2-thinking",
+                    "quality": 2,
+                    "enableTopP": true
+                }
+            ],
+            "modelPool": [
+                "kimi-k2.5",
+                "kimi-k2-thinking",
+                "kimi-k2-turbo-preview",
+                "kimi-k2-0905-preview"
+            ]
+        },
+        {
+            "type": "MiniMax",
+            "model": "MiniMax-M2",
+            "endpoint": "https://api.minimaxi.com/v1/chat/completions",
+            "apiKey": "",
+            "enrollmentUrl": "https://platform.minimaxi.com/user-center/basic-information/interface-key",
+            "modelListUrl": "https://platform.minimaxi.com/docs/guides/pricing-paygo",
+            "notes": "no free models",
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelOptions": [],
+            "modelPool": [
+                "MiniMax-M2",
+                "MiniMax-M2-Stable"
+            ],
+            "disabled": true
+        },
+        {
+            "type": "Nvidia",
+            "model": "meta/llama-4-maverick-17b-128e-instruct",
+            "endpoint": "https://integrate.api.nvidia.com/v1/chat/completions",
+            "apiKey": "",
+            "enrollmentUrl": "https://build.nvidia.com/settings/api-keys",
+            "modelListUrl": "https://docs.api.nvidia.com/nim/reference/llm-apis",
+            "hasApiKey": false,
+            "hasEndpoint": true,
+            "modelOptions": [],
+            "modelPool": [
+                "---llm/apis",
+                "abacusai/dracarys-llama-3.1-70b-instruct",
+                "abacusai/dracarys-llama-3.1-70b-instruct-infer",
+                "ai21labs/jamba-1-5-mini-instruct",
+                "ai21labs/jamba-1-5-mini-instruct-infer",
+                "aisingapore/sea-lion-7b-instruct",
+                "create_chat_completion_v1_chat_completions_post",
+                "baichuan/inc-baichuan2-13b-chat",
+                "baichuan/inc-baichuan2-13b-chat-infer",
+                "bigcode/starcoder2-7b",
+                "bigcode/starcoder2-7b-infer",
+                "bytedance/seed-oss-36b-instruct",
+                "bytedance/seed-oss-36b-instruct-infer",
+                "deepseek/ai-deepseek-r1-distill-llama-8b",
+                "deepseek/ai-deepseek-r1-distill-llama-8b-infer",
+                "deepseek/ai-deepseek-r1-distill-qwen-7b",
+                "deepseek/ai-deepseek-r1-distill-qwen-7b-infer",
+                "deepseek/ai-deepseek-r1-distill-qwen-14b",
+                "deepseek/ai-deepseek-r1-distill-qwen-14b-infer",
+                "deepseek/ai-deepseek-r1-distill-qwen-32b",
+                "deepseek/ai-deepseek-r1-distill-qwen-32b-infer",
+                "deepseek/ai-deepseek-v3.1",
+                "deepseek/ai-deepseek-v3.1-infer",
+                "deepseek/ai-deepseek-v3.1-terminus",
+                "deepseek/ai-deepseek-v3.1-terminus-infer",
+                "deepseek/ai-deepseek-v3_2",
+                "deepseek/ai-deepseek-v3_2-infer",
+                "google/codegemma-1-1-7b-1",
+                "create_chat_completion_v1_chat_completions_post/1",
+                "google/codegemma-7b",
+                "google/codegemma-7b-infer",
+                "google/gemma7b",
+                "google/gemma7b-infer",
+                "google/gemma-2-2b-it",
+                "google/gemma-2-2b-it-infer",
+                "google/gemma-2-9b-it",
+                "google/gemma-2-9b-it-infer",
+                "google/gemma-2-27b-it",
+                "google/gemma-2-27b-it-infer",
+                "google/gemma-3-1b-it",
+                "google/gemma-3-1b-it-infer",
+                "google/shieldgemma-9b",
+                "google/shieldgemma-9b-infer",
+                "gotocompany/gemma-2-9b-cpt-sahabatai-instruct",
+                "gotocompany/gemma-2-9b-cpt-sahabatai-instruct-infer",
+                "ibm/granite-3.3-8b-instruct",
+                "ibm/granite-3.3-8b-instruct-infer",
+                "ibm/granite-guardian-3.0-8b",
+                "ibm/granite-guardian-3.0-8b-infer",
+                "igenius/colosseum_355b_instruct_16k-infer",
+                "igenius/italia_10b_instruct_16k",
+                "igenius/italia_10b_instruct_16k-infer",
+                "institute/of-science-tokyo-llama-3-1-swallow-70b-instruct-v01",
+                "institute/of-science-tokyo-llama-3-1-swallow-70b-instruct-v01-infer",
+                "institute/of-science-tokyo-llama-3-1-swallow-8b-instruct-v01",
+                "institute/of-science-tokyo-llama-3-1-swallow-8b-instruct-v01-infer",
+                "marin/marin-8b-instruct",
+                "marin/marin-8b-instruct-infer",
+                "mediatek/breeze-7b-instruct",
+                "create_chat_completion_v1_chat_completions_post/3",
+                "meta/codellama-70b",
+                "meta/codellama-70b-infer",
+                "meta/llama2-70b",
+                "meta/llama2-70b-infer",
+                "meta/llama3-8b",
+                "meta/llama3-8b-infer",
+                "meta/llama3-70b",
+                "meta/llama3-70b-infer",
+                "meta/llama-3.1-8b",
+                "meta/llama-3.1-8b-infer",
+                "meta/llama-3.1-70b",
+                "meta/llama-3.1-70b-infer",
+                "meta/llama-3.1-405b",
+                "meta/llama-3.1-405b-infer",
+                "meta/llama-3_2-1b-instruct",
+                "meta/llama-3_2-1b-instruct-infer",
+                "meta/llama-3_2-3b-instruct",
+                "meta/llama-3_2-3b-instruct-infer",
+                "meta/llama-3.3-70b-instruct",
+                "meta/llama-3.3-70b-instruct-infer",
+                "microsoft/phi-3-medium-128k",
+                "microsoft/phi-3-medium-128k-infer",
+                "microsoft/phi-3-medium-4k",
+                "microsoft/phi-3-medium-4k-infer",
+                "microsoft/phi-3-mini",
+                "microsoft/phi-3-mini-infer",
+                "microsoft/phi-3-mini-4k",
+                "microsoft/phi-3-mini-4k-infer",
+                "microsoft/phi-3-small-128k",
+                "microsoft/phi-3-small-128k-infer",
+                "microsoft/phi-3-small-8k",
+                "microsoft/phi-3-small-8k-infer",
+                "microsoft/phi-3_5-mini",
+                "microsoft/phi-3_5-mini-infer",
+                "microsoft/phi-4-mini-instruct",
+                "microsoft/phi-4-mini-instruct-infer",
+                "microsoft/phi-4-mini-flash-reasoning",
+                "microsoft/phi-4-mini-flash-reasoning-infer",
+                "minimaxai/minimax-m2.5",
+                "minimaxai/minimax-m2.5-infer",
+                "minimaxai/minimax-m2.1",
+                "minimaxai/minimax-m2.1-infer",
+                "mistralai/codestral-22b-instruct-v01",
+                "mistralai/codestral-22b-instruct-v01-infer",
+                "mistralai/devstral-2-123b-instruct-2512",
+                "mistralai/devstral-2-123b-instruct-2512-infer",
+                "mistralai/magistral-small-2506",
+                "mistralai/magistral-small-2506-infer",
+                "mistralai/mamba-codestral-7b-v01",
+                "mistralai/mamba-codestral-7b-v01-infer",
+                "mistralai/mathstral-7b-v01",
+                "mistralai/mathstral-7b-v01-infer",
+                "mistralai/mistral-large-2-instruct",
+                "mistralai/mistral-large-2-instruct-infer",
+                "mistralai/mistral-7b-instruct",
+                "mistralai/mistral-7b-instruct-infer",
+                "mistralai/mistral-7b-instruct-v03",
+                "mistralai/mistral-7b-instruct-v03-infer",
+                "mistralai/mistral-large",
+                "mistralai/mistral-large-infer",
+                "mistralai/mistral-nemotron",
+                "mistralai/mistral-nemotron-infer",
+                "mistralai/mistral-small-24b-instruct",
+                "mistralai/mistral-small-24b-instruct-infer",
+                "mistralai/mixtral-8x7b-instruct",
+                "mistralai/mixtral-8x7b-instruct-infer",
+                "mistralai/mixtral-8x22b-instruct-infer",
+                "moonshotai/kimi-k2-instruct",
+                "moonshotai/kimi-k2-instruct-infer",
+                "moonshotai/kimi-k2-instruct-0905",
+                "moonshotai/kimi-k2-instruct-0905-infer",
+                "moonshotai/kimi-k2-thinking",
+                "moonshotai/kimi-k2-thinking-infer",
+                "nvidia/gliner-pii",
+                "nvidia/gliner-pii-infer",
+                "nvidia/llama3-chatqa-1-5-8b",
+                "nvidia/llama3-chatqa-1-5-8b-infer",
+                "nvidia/llama-3.1-nemoguard-8b-content-safety",
+                "nvidia/llama-3.1-nemoguard-8b-content-safety-infer",
+                "nvidia/llama-3.1-nemoguard-8b-topic-control",
+                "nvidia/llama-3.1-nemoguard-8b-topic-control-infer",
+                "nvidia/llama-3.1-nemotron-nano-8b-v1",
+                "nvidia/llama-3.1-nemotron-nano-8b-v1-infer",
+                "nvidia/llama-3.1-nemotron-70b-reward",
+                "nvidia/llama-3.1-nemotron-70b-reward-infer",
+                "nvidia/llama-3.1-nemotron-nano-4b-v1_1",
+                "nvidia/llama-3.1-nemotron-nano-4b-v1_1-infer",
+                "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
+                "nvidia/llama-3.1-nemotron-safety-guard-8b-v3-infer",
+                "nvidia/llama-3.1-nemotron-safety-guard-multilingual-8b-v1",
+                "nvidia/llama-3.1-nemotron-safety-guard-multilingual-8b-v1-infer",
+                "nvidia/llama-3.1-nemotron-ultra-253b-v1",
+                "nvidia/llama-3.1-nemotron-ultra-253b-v1-infer",
+                "nvidia/llama-3_2-nemoretriever-1b-vlm-embed-v1",
+                "nvidia/llama-3_2-nemoretriever-1b-vlm-embed-v1-infer",
+                "nvidia/llama-3.3-nemotron-super-49b-v1",
+                "nvidia/llama-3.3-nemotron-super-49b-v1-infer",
+                "nvidia/llama-3.3-nemotron-super-49b-v1_5",
+                "nvidia/llama-3.3-nemotron-super-49b-v1_5-infer",
+                "nvidia/mistral-nemo-minitron-8b-base",
+                "nvidia/mistral-nemo-minitron-8b-base-infer",
+                "nvidia/nemoguard-jailbreak-detect",
+                "nvidia/nemoguard-jailbreak-detect-infer",
+                "nvidia/nemotron-3-nano-30b-a3b",
+                "nvidia/nemotron-3-nano-30b-a3b-infer",
+                "nvidia/nemotron-3-super-120b-a12b",
+                "nvidia/nemotron-3-super-120b-a12b-infer",
+                "nvidia/nemotron-4-mini-hindi-4b-instruct",
+                "nvidia/nemotron-4-mini-hindi-4b-instruct-infer",
+                "nvidia/nemotron-content-safety-reasoning-4b",
+                "nvidia/nemotron-content-safety-reasoning-4b-infer",
+                "nvidia/nemotron-mini-4b-instruct",
+                "nvidia/nemotron-mini-4b-instruct-infer",
+                "nvidia/nvidia-nemotron-nano-9b-v2",
+                "nvidia/nvidia-nemotron-nano-9b-v2-infer",
+                "nvidia/riva-translate-4b-instruct-v1_1",
+                "nvidia/riva-translate-4b-instruct-v1_1-infer",
+                "nvidia/usdcode",
+                "nvidia/usdcode-infer",
+                "nvidia/usdsearch",
+                "nvidia/usdsearch-infer",
+                "openai/gpt-oss-20b",
+                "openai/gpt-oss-20b-infer",
+                "openai/gpt-oss-120b",
+                "openai/gpt-oss-120b-infer",
+                "opengpt/x-teuken-7b-instruct-commercial-v04",
+                "opengpt/x-teuken-7b-instruct-commercial-v04-infer",
+                "qwen/qwen2-7b-instruct",
+                "qwen/qwen2-7b-instruct-infer",
+                "qwen/qwen2.5-7b-instruct",
+                "qwen/qwen2.5-7b-instruct-infer",
+                "qwen/qwen2.5-coder-7b-instruct",
+                "qwen/qwen2.5-coder-7b-instruct-infer",
+                "qwen/qwen2.5-coder-32b-instruct",
+                "qwen/qwen2.5-coder-32b-instruct-infer",
+                "qwen/qwen3.5-122b-a10b",
+                "qwen/qwen3.5-122b-a10b-infer",
+                "qwen/qwen3.5-122b-a10b-statuspolling",
+                "qwen/qwen3-coder-480b-a35b-instruct",
+                "qwen/qwen3-coder-480b-a35b-instruct-infer",
+                "qwen/qwen3-next-80b-a3b-instruct",
+                "qwen/qwen3-next-80b-a3b-instruct-infer",
+                "qwen/qwen3-next-80b-a3b-thinking",
+                "qwen/qwen3-next-80b-a3b-thinking-infer",
+                "qwen/qwq-32b",
+                "qwen/qwq-32b-infer",
+                "rakuten/rakutenai-7b-chat",
+                "rakuten/rakutenai-7b-chat-infer",
+                "rakuten/rakutenai-7b-instruct",
+                "rakuten/rakutenai-7b-instruct-infer",
+                "seallms/seallm-7b-v25",
+                "seallms/seallm-7b-v25-infer",
+                "sarvamai/sarvam-m",
+                "sarvamai/sarvam-m-infer",
+                "speakleash/bielik-11b-v2_6-instruct",
+                "speakleash/bielik-11b-v2_6-instruct-infer",
+                "stepfun/ai-step-3-5-flash",
+                "stepfun/ai-step-3-5-flash-infer",
+                "stockmark/stockmark-2-100b-instruct",
+                "create_chat_completion_v1_chat_completions_post/4",
+                "tokyotech/llm-llama-3-swallow-70b-instruct-v01",
+                "tokyotech/llm-llama-3-swallow-70b-instruct-v01-infer",
+                "thudm/chatglm3-6b",
+                "thudm/chatglm3-6b-infer",
+                "tiiuae/falcon3-7b-instruct",
+                "tiiuae/falcon3-7b-instruct-infer",
+                "upstage/solar-10_7b-instruct",
+                "upstage/solar-10_7b-instruct-infer",
+                "utter/project-eurollm-9b-instruct",
+                "utter/project-eurollm-9b-instruct-infer",
+                "yentinglin/llama-3-taiwan-70b-instruct",
+                "yentinglin/llama-3-taiwan-70b-instruct-infer",
+                "z/ai-glm4-7",
+                "z/ai-glm4-7-infer",
+                "z/ai-glm5",
+                "z/ai-glm5-infer",
+                "---retrieval/apis",
+                "baai/bge-m3",
+                "baai/bge-m3-invoke",
+                "baai/bge-m3-statuspolling",
+                "nvidia/embed-qa-4",
+                "nvidia/embedding-2b-infer",
+                "nvidia/llama-3_2-nemoretriever-300m-embed-v1",
+                "nvidia/llama-3_2-nemoretriever-300m-embed-v1-infer",
+                "nvidia/llama-3_2-nemoretriever-300m-embed-v2",
+                "nvidia/llama-3_2-nemoretriever-300m-embed-v2-infer",
+                "nvidia/llama-3_2-nemoretriever-500m-rerank-v2",
+                "nvidia/llama-3_2-nemoretriever-500m-rerank-v2-infer",
+                "nvidia/llama-3_2-nv-embedqa-1b-v1",
+                "nvidia/llama-3_2-nv-embedqa-1b-v1-infer",
+                "nvidia/llama-3_2-nv-embedqa-1b-v2",
+                "nvidia/llama-3_2-nv-embedqa-1b-v2-infer",
+                "nvidia/llama-3_2-nv-rerankqa-1b-v1",
+                "nvidia/llama-3_2-nv-rerankqa-1b-v1-infer",
+                "nvidia/llama-3_2-nv-rerankqa-1b-v2",
+                "nvidia/llama-3_2-nv-rerankqa-1b-v2-infer",
+                "nvidia/llama-nemotron-embed-1b-v2",
+                "nvidia/llama-nemotron-embed-1b-v2-infer",
+                "nvidia/llama-nemotron-embed-vl-1b-v2",
+                "nvidia/llama-nemotron-embed-vl-1b-v2-infer",
+                "nvidia/llama-nemotron-rerank-1b-v2",
+                "nvidia/llama-nemotron-rerank-1b-v2-infer",
+                "nvidia/nvclip",
+                "nvidia/nvclip-infer",
+                "nvidia/nv-embed-v1",
+                "nvidia/nv-embed-v1-infer",
+                "nvidia/nv-embedcode-7b-v1",
+                "nvidia/nv-embedcode-7b-v1-infer",
+                "nvidia/nv-embedqa-e5-v5",
+                "nvidia/nv-embedqa-e5-v5-infer",
+                "nvidia/nv-rerankqa-mistral-4b-v3",
+                "nvidia/nv-rerankqa-mistral-4b-v3-infer",
+                "nvidia/rerank-qa-mistral-4b",
+                "nvidia/reranking-4b-infer",
+                "snowflake/arctic-embed-l",
+                "snowflake/arctic-embed-l-invoke",
+                "snowflake/arctic-embed-l-statuspolling",
+                "---- visual/models-apis",
+                "black/forest-labs-flux_1-dev",
+                "black/forest-labs-flux_1-dev-infer",
+                "black/forest-labs-flux_1-schnell",
+                "black/forest-labs-flux_1-schnell-infer",
+                "black/forest-labs-flux_2-klein-4b",
+                "black/forest-labs-flux_2-klein-4b-infer",
+                "google/gemma-3-27b-it",
+                "google/gemma-3-27b-it-infer",
+                "google/gemma-3-27b-it-statuspolling",
+                "google/gemma-3n-e2b-it",
+                "google/gemma-3n-e2b-it-infer",
+                "google/gemma-3n-e2b-it-statuspolling",
+                "google/gemma-3n-e4b-it",
+                "google/gemma-3n-e4b-it-infer",
+                "google/gemma-3n-e4b-it-statuspolling",
+                "hive/ai-generated-image-detection",
+                "hive/ai-generated-image-detection-infer",
+                "hive/deepfake-image-detection",
+                "hive/deepfake-image-detection-infer",
+                "meta/llama-guard-4-12b",
+                "meta/llama-guard-4-12b-infer",
+                "meta/llama-guard-4-12b-statuspolling",
+                "microsoft/phi-4-multimodal-instruct",
+                "microsoft/phi-4-multimodal-instruct-infer",
+                "microsoft/phi-4-multimodal-instruct-statuspolling",
+                "microsoft/trellis",
+                "microsoft/trellis-infer",
+                "mistralai/mistral-large-3-675b-instruct-2512",
+                "mistralai/mistral-large-3-675b-instruct-2512-infer",
+                "mistralai/mistral-large-3-675b-instruct-2512-statuspolling",
+                "mistralai/ministral-14b-instruct-2512",
+                "mistralai/ministral-14b-instruct-2512-infer",
+                "mistralai/ministral-14b-instruct-2512-statuspolling",
+                "mistralai/mistral-medium-3-instruct",
+                "mistralai/mistral-medium-3-instruct-infer",
+                "mistralai/mistral-medium-3-instruct-statuspolling",
+                "mistralai/mistral-small-3.1-24b-instruct-2503",
+                "mistralai/mistral-small-3.1-24b-instruct-2503-infer",
+                "mistralai/mistral-small-3.1-24b-instruct-2503-statuspolling",
+                "nvidia/bevformer",
+                "nvidia/bevformer-infer",
+                "nvidia/cosmos-1_0-diffusion-7b",
+                "nvidia/nemoretriever-parse",
+                "nvidia/nemoretriever-parse-infer",
+                "nvidia/nemoretriever-parse-statuspolling",
+                "nvidia/nemotron-nano-12b-v2-vl",
+                "nvidia/nemotron-nano-12b-v2-vl-infer",
+                "nvidia/nemotron-nano-v2-12b-vl-statuspolling",
+                "nvidia/nemotron-parse",
+                "nvidia/nemotron-parse-infer",
+                "nvidia/nemotron-parse-statuspolling",
+                "nvidia/nv-dinov2",
+                "nvidia/nv-dinov2-infer",
+                "nvidia/nv-dinov2-statuspolling",
+                "nvidia/nv-grounding-dino",
+                "nvidia/nv-grounding-dino-infer",
+                "nvidia/nv-grounding-dino-statuspolling",
+                "nvidia/ocdrnet",
+                "nvidia/ocdrnet-infer",
+                "nvidia/ocdrnet-statuspolling",
+                "nvidia/retail-object-detection",
+                "nvidia/retail-object-detection-infer",
+                "nvidia/retail-object-detection-statuspolling",
+                "nvidia/sparsedrive",
+                "nvidia/sparsedrive-infer",
+                "nvidia/streampetr",
+                "nvidia/streampetr-infer",
+                "nvidia/vila",
+                "nvidia/vila-infer",
+                "nvidia/vila-statuspolling",
+                "nvidia/visual-changenet",
+                "nvidia/visual-changenet-infer",
+                "nvidia/visual-changenet-statuspolling",
+                "stabilityai/stable-diffusion-3-medium",
+                "stabilityai/stable-diffusion-3-medium-infer",
+                "stabilityai/stable-diffusion-xl",
+                "stabilityai/stable-diffusion-xl-infer",
+                "stabilityai/stable-video-diffusion",
+                "stabilityai/stable-video-diffusion-infer",
+                "---- multimodal/apis",
+                "black/forest-labs-flux_1-kontext-dev",
+                "black/forest-labs-flux_1-kontext-dev-infer",
+                "google/paligemma",
+                "google/paligemma-infer",
+                "google/paligemma-statuspolling",
+                "meta/llama-3_2-11b-vision-instruct",
+                "meta/llama-3_2-11b-vision-instruct-infer",
+                "meta/llama-3_2-11b-vision-instruct-statuspolling",
+                "meta/llama-3_2-90b-vision-instruct",
+                "meta/llama-3_2-90b-vision-instruct-infer",
+                "meta/llama-3_2-90b-vision-instruct-statuspolling",
+                "meta/llama-4-maverick-17b-128e-instruct",
+                "meta/llama-4-maverick-17b-128e-instruct-infer",
+                "meta/llama-4-maverick-17b-128e-instruct-statuspolling",
+                "meta/llama-4-scout-17b-16e-instruct",
+                "meta/llama-4-scout-17b-16e-instruct-infer",
+                "meta/llama-4-scout-17b-16e-instruct-statuspolling",
+                "microsoft/phi-3_5-vision-instruct",
+                "microsoft/phi-3_5-vision-instruct-infer",
+                "microsoft/phi-3_5-vision-instruct-statuspolling",
+                "moonshotai/kimi-k2.5",
+                "moonshotai/kimi-k2.5-infer",
+                "moonshotai/kimi-k2.5-statuspolling",
+                "nvidia/llama-3.1-nemotron-nano-vl-8b-v1",
+                "nvidia/llama-3.1-nemotron-nano-vl-8b-v1-infer",
+                "nvidia/llama-3.1-nemotron-nano-vl-8b-v1-statuspolling",
+                "qwen/qwen3.5-397b-a17b",
+                "qwen/qwen3.5-397b-a17b-infer",
+                "qwen/qwen3.5-397b-a17b-statuspolling"
+            ]
+        },
+        {
+            "type": "Chatjimmy",
+            "model": "llama3.1-8B",
+            "endpoint": "https://chatjimmy.ai/api/chat",
+            "apiKey": "",
+            "enrollmentUrl": "https://chatjimmy.ai",
+            "notes": "Free, no API key needed",
+            "needVPN": false,
+            "hasApiKey": false,
+            "hasEndpoint": true,
+            "modelOptions": [],
+            "modelPool": [
+                "llama3.1-8B"
+            ]
+        },
+        {
+            "type": "Sambanova",
+            "model": "DeepSeek-R1-0528",
+            "endpoint": "https://api.sambanova.ai/v1/chat/completions",
+            "apiKey": "",
+            "enrollmentUrl": "https://docs.sambanova.ai/docs/en/get-started/api-keys-urls",
+            "notes": "RPM 20 - 40, RPD 40, TPD 200000 for free use",
+            "needVPN": false,
+            "hasApiKey": false,
+            "hasEndpoint": true,
+            "modelOptions": [],
+            "modelPool": [
+                "DeepSeek-R1-0528",
+                "DeepSeek-V3-0324",
+                "DeepSeek-V3.1",
+                "DeepSeek-R1-Distill-Llama-70B",
+                "Meta-Llama-3.3-70B-Instruct",
+                "Meta-Llama-3.1-8B-Instruct",
+                "Llama-4-Maverick-17B-128E-Instruct",
+                "gpt-oss-120b",
+                "Whisper-Large-v3",
+                "Qwen3-235B-A22B-Instruct-2507",
+                "Qwen3-32B",
+                "Llama-3.3-Swallow-70B-Instruct-v0.4",
+                "E5-Mistral-7B-Instruct"
+            ]
+        },
+        {
+            "type": "Groq",
+            "model": "openai/gpt-oss-120b",
+            "endpoint": "https://api.groq.com/openai/v1/chat/completions",
+            "apiKey": "",
+            "enrollmentUrl": "https://console.groq.com/keys",
+            "modelListUrl": "https://console.groq.com/docs/models",
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelListAbleToFetch": true,
+            "modelOptions": [],
+            "modelPool": [
+                "llama-3.1-8b-instant",
+                "llama-3.3-70b-versatile",
+                "openai/gpt-oss-120b",
+                "canopylabs/orpheus-v1-english",
+                "moonshotai/kimi-k2-instruct-0905"
+            ]
+        },
+        {
+            "type": "AIMLAPI",
+            "model": "gemma-3-12b-it",
+            "endpoint": "https://api.aimlapi.com/v1/chat/completions",
+            "enrollmentUrl": "https://aimlapi.com/app/keys",
+            "apiKey": "",
+            "modelPool": [
+                "gemma-3n-e4b-it",
+                "gemma-3-12b-it",
+                "baidu/ernie-4-5-0-3b"
+            ]
+        },
+        {
+            "type": "Longcat",
+            "model": "LongCat-Flash-Chat",
+            "endpoint": "https://api.longcat.chat/openai/v1/chat/completions",
+            "enrollmentUrl": "https://longcat.chat/platform/api_keys",
+            "apiKey": "",
+            "modelOptions": [
+                {
+                    "maxTokens": "32k",
+                    "modalities": [
+                        "text"
+                    ],
+                    "model": "LongCat-Flash-Omni-2603",
+                    "quality": 2,
+                    "enableTopP": true
+                }
+            ],
+            "modelPool": [
+                "LongCat-Flash-Chat",
+                "LongCat-Flash-Thinking",
+                "LongCat-Flash-Thinking-2601",
+                "LongCat-Flash-Lite",
+                "LongCat-Flash-Omni-2603"
+            ]
+        },
+        {
+            "type": "Riffle Sidekick",
+            "endpoint": "https://riffle-sidekick.gsx123.workers.dev/api/v1/chat/completions",
+            "model": "meta/llama-4-maverick-17b-128e-instruct",
+            "apiKey": "",
+            "hasApiKey": true,
+            "enrollmentUrl": "https://riffle-sidekick.gsx123.workers.dev",
+            "modelPool": [
+                "openai/gpt-oss-120b",
+                "zai-org/glm-4.7-flash",
+                "meta/llama-4-scout-17b-16e-instruct",
+                "meta/llama-3.3-70b-instruct-fp8-fast",
+                "fblgit/una-cybertron-7b-v2-bf16",
+                "qwen/qwen3-30b-a3b-fp8"
+            ]
+        },
+        {
+            "type": "Ollama Cloud",
+            "model": "gpt-oss:20b-cloud",
+            "endpoint": "https://ollama.com/api/chat",
+            "apiKey": "",
+            "enrollmentUrl": "https://ollama.com/settings/keys",
+            "modelListUrl": "https://ollama.com/search",
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelListAbleToFetch": true,
+            "modelOptions": [],
+            "modelPool": [
+                "minimax-m2.7:cloud",
+                "qwen3.5:122b-cloud",
+                "qwen3-coder-next:cloud",
+                "qwen3-vl:235b-cloud",
+                "devstral-small-2:24b-cloud",
+                "ministral-3:14b-cloud",
+                "minimax-m2.5:cloud",
+                "glm-5:cloud",
+                "qwen3-next:80b-cloud",
+                "rnj-1:8b-cloud",
+                "nemotron-3-super:120b-cloud",
+                "kimi-k2.5:cloud",
+                "nemotron-3-nano:30b-cloud",
+                "devstral-2:123b-cloud",
+                "gemini-3-flash-preview:cloud",
+                "cogito-2.1:671b-cloud",
+                "glm-4.7:cloud",
+                "minimax-m2:cloud",
+                "glm-4.6:cloud",
+                "deepseek-v3.2:cloud",
+                "minimax-m2.1:cloud",
+                "kimi-k2-thinking:cloud",
+                "mistral-large-3:cloud",
+                "gpt-oss:120b-cloud",
+                "qwen3-coder:480b-cloud",
+                "deepseek-v3.1:671b-cloud",
+                "kimi-k2:cloud",
+                "gemma3:27b-cloud"
+            ]
+        },
+        {
+            "type": "LM-Studio",
+            "model": "google/gemma-3-4b",
+            "endpoint": "http://localhost:1234/v1/chat/completions",
+            "apiKey": "",
+            "enrollmentUrl": null,
+            "hasApiKey": false,
+            "hasEndpoint": true,
+            "modelListAbleToFetch": true,
+            "modelOptions": [],
+            "modelPool": [
+                "qwen3-vl-8b-instruct-abliterated-v2.0",
+                "google/gemma-3-4b",
+                "zai-org/glm-4.6v-flash",
+                "qwen/qwen3-30b-a3b-2507"
+            ]
+        },
+        {
+            "type": "AtomGit",
+            "model": "zai-org/GLM-5",
+            "endpoint": "https://api-ai.gitcode.com/v1/chat/completions",
+            "apiKey": "",
+            "enrollmentUrl": "https://docs.atomgit.com/docs/apis/post-api-v-5-chat-completions/",
+            "modelListUrl": "https://ai.atomgit.com/models?exp=ONLINE",
+            "needVPN": false,
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelOptions": [],
+            "modelPool": [
+                "zai/glm-5",
+                "zai-org/GLM-5",
+                "Qwen/Qwen3.5-397B-A17B",
+                "Qwen/Qwen3.5-122B-A10B",
+                "Qwen3.5-397B-A17B-w8a8-mtp",
+                "deepseek-ai/DeepSeek-R1",
+                "Qwen/Qwen3-Coder-480B-A35B-Instruct"
+            ]
+        },
+        {
+            "type": "Volcengine",
+            "model": "doubao-1.5-vision-pro-250328",
+            "endpoint": "https://ark.cn-beijing.volces.com/api/v3/chat/completions",
+            "apiKey": "",
+            "enrollmentUrl": "https://console.volcengine.com/ark/region:ark+cn-beijing/endpoint",
+            "modelListUrl": "https://console.volcengine.com/ark/region:ark+cn-beijing/model?groupType=ModelGroups&vendor=Bytedance&view=DEFAULT_VIEW",
+            "notes": "",
+            "needVPN": false,
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelOptions": [],
+            "modelPool": [
+                "doubao-seed-2-0-lite-260215",
+                "doubao-seed-2-0-mini-260215",
+                "doubao-seed-2-0-pro-260215",
+                "doubao-seed-1-8-251228",
+                "doubao-seed-1-6-251015",
+                "doubao-1-5-thinking-vision-pro-250428",
+                "doubao-1.5-vision-pro-250328"
+            ]
+        },
+        {
+            "type": "Vercel",
+            "model": "gpt-4o-mini",
+            "endpoint": "https://ai-gateway.vercel.sh/v1/chat/completions",
+            "apiKey": "",
+            "enrollmentUrl": "https://vercel.com/d?to=%2F%5Bteam%5D%2F%7E%2Fai-gateway%2Fapi-keys&title=AI+Gateway+API+Keys",
+            "modelListUrl": "https://vercel.com/d?to=%2F%5Bteam%5D%2F%7E%2Fai-gateway%2Fmodels&title=AI+Models",
+            "notes": "Monthly credit $5/month included",
+            "needVPN": true,
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelOptions": [
+                {
+                    "maxTokens": "1048576",
+                    "modalities": [
+                        "audio-input"
+                    ],
+                    "model": "google/gemini-3-flash",
+                    "enableTopP": true
+                },
+                {
+                    "maxTokens": "1048576",
+                    "modalities": [
+                        "audio-input"
+                    ],
+                    "model": "anthropic/claude-opus-4.6",
+                    "enableTopP": true
+                }
+            ],
+            "modelPool": [
+                "anthropic/claude-opus-4.6",
+                "google/gemini-3-flash",
+                "kwaipilot/kat-coder-pro-v1",
+                "anthropic/claude-sonnet-4.6",
+                "minimax/minimax-m2.5",
+                "zai/glm-5",
+                "google/gemini-2.5-flash-lite",
+                "anthropic/claude-haiku-4.5",
+                "moonshotai/kimi-k2.5",
+                "google/gemini-3.1-pro-preview",
+                "openai/gpt-5.4",
+                "anthropic/claude-3.7-sonnet",
+                "anthropic/claude-sonnet-4.5",
+                "google/gemini-2.5-flash",
+                "openai/gpt-5.2",
+                "google/gemini-3.1-flash-lite-preview",
+                "anthropic/claude-sonnet-4",
+                "anthropic/claude-opus-4.5",
+                "xai/grok-4.1-fast-non-reasoning",
+                "openai/gpt-5.1-instant"
+            ]
+        },
+        {
+            "type": "OpenCode",
+            "model": "opencode/big-pickle",
+            "endpoint": "https://opencode.ai/zen/v1/chat/completions",
+            "apiKey": "",
+            "enrollmentUrl": "https://opencode.ai/workspace/wrk_01KMEJ1FG1FJHBRGH2SRBGBYSM/keys",
+            "modelListUrl": "https://opencode.ai/docs/zen/",
+            "notes": "",
+            "needVPN": true,
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelOptions": [],
+            "modelPool": [
+                "big-pickle",
+                "mimo-v2-pro-free",
+                "mimo-v2-omni-free",
+                "nemotron-3-super-free",
+                "minimax-m2.5-free",
+                "qwen3.6-plus-free"
+            ]
+        }
+    ]
+}
