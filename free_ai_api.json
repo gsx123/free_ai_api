@@ -82,7 +82,16 @@
         "needVPN": true,
         "hasApiKey": true,
         "hasEndpoint": true,
-        "modelOptions": [],
+        "modelOptions": [
+            {
+                "maxTokens": "128k",
+                "modalities": [
+                    "text"
+                ],
+                "model": "z-ai/glm-4.7-flash-free",
+                "enableTopP": false
+            }
+        ],
         "modelPool": [
             "stepfun/step-3.5-flash-free",
             "z-ai/glm-4.7-flash-free",
