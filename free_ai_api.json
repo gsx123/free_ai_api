@@ -310,12 +310,18 @@
                     ],
                     "model": "meta-llama/llama-4-maverick:free",
                     "enableTopP": true
+                },
+                {
+                    "maxTokens": "128k",
+                    "modalities": [
+                        "text"
+                    ],
+                    "model": "nvidia/nemotron-3-super-120b-a12b:free",
+                    "enableTopP": true
                 }
             ],
             "modelPool": [
                 "qwen/qwen3.6-plus-preview:free",
-                "openrouter/hunter-alpha",
-                "openrouter/healer-alpha",
                 "nvidia/nemotron-3-super-120b-a12b:free",
                 "minimax/minimax-m2.5:free",
                 "stepfun/step-3.5-flash:free",
@@ -590,7 +596,7 @@
         },
         {
             "type": "BigModel",
-            "model": "glm-4-flashx",
+            "model": "glm-4-flash",
             "endpoint": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
             "apiKey": "",
             "modelListUrl": "https://open.bigmodel.cn/console/modelcenter/square",
@@ -615,13 +621,22 @@
                     ],
                     "model": "CogVideoX-Flash",
                     "enableTopP": true
+                },
+                {
+                    "maxTokens": "128k",
+                    "modalities": [
+                        "text"
+                    ],
+                    "model": "GLM-4.5-Flash",
+                    "enableTopP": true
                 }
             ],
             "modelPool": [
-                "glm-4-flashx",
+                "GLM-4.7-Flash",
+                "GLM-4.6V-Flash",
+                "GLM-4.5-Flash",
                 "glm-4-flash",
                 "glm-4-flash-250414",
-                "GLM-4.5-Flash",
                 "CogView-3-Flash",
                 "GLM-Z1-Flash",
                 "CogVideoX-Flash"
