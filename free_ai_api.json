@@ -1,5 +1,5 @@
 {
-    "version": 1,
+    "version": 5,
     "providers": [
         {
             "type": "XiaoMi",
@@ -1389,6 +1389,7 @@
             "modelListAbleToFetch": true,
             "modelOptions": [],
             "modelPool": [
+                "gemma4:31b-cloud",
                 "minimax-m2.7:cloud",
                 "qwen3.5:122b-cloud",
                 "qwen3-coder-next:cloud",
@@ -1550,6 +1551,23 @@
                 "nemotron-3-super-free",
                 "minimax-m2.5-free",
                 "qwen3.6-plus-free"
+            ]
+        },
+        {
+            "type": "Kilo",
+            "model": "kilo-auto/free",
+            "endpoint": "https://api.kilo.ai/api/gateway/chat/completions",
+            "apiKey": "",
+            "enrollmentUrl": "https://app.kilo.ai/profile",
+            "modelListUrl": "https://kilo.ai/leaderboard",
+            "notes": "",
+            "needVPN": true,
+            "hasApiKey": true,
+            "hasEndpoint": true,
+            "modelOptions": [],
+            "modelPool": [
+                "kilo-auto/free",
+                "nvidia/nemotron-3-super-120b-a12b:free"
             ]
         }
     ]
